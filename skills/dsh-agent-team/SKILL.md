@@ -65,8 +65,11 @@ moment rather than wait for the work to end.
 8. **Members are created for the work.** "For the future" in advance — no: a living member costs attention,
    and a conversation with them costs steps. The roster never gives a place back: every creation is counted
    for the life of the session — failed ones too, and the name is spent with it — and the next is refused
-   with `Team member limit <n> reached`. The ceiling is a config field of the team's own row: eight in this
-   environment, sixteen by default in the platform's code, changed only by a patch row. A member that has
+   with `Team member limit <n> reached`. The ceiling is a config field of the team's own row — sixteen by
+   default in the platform's code, and in an environment whatever its profile's patch declares. It is raised
+   from that patch by an `id`-targeted entry that restates the **whole** `config`, since it is replaced and
+   not merged (`maxMembers`, `maxTasks`, `maxPendingMessagesPerMember`, `maxMessageBytes`,
+   `disposalTimeoutMs`); an application restart applies it. A member that has
    exhausted its context is not revived: its subject moves to another member, and everything found on the
    way — notes, helpers — stays on disk, where whoever takes the subject up reads it. A spent roster and a
    subject that has changed are the two reasons to start a new session: a new session begins with an empty
