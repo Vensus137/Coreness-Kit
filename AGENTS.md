@@ -22,13 +22,15 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 
 **Code after agreement.** Before implementation — a check of understanding: how the task is understood, what is proposed, where the doubts are.
 
+**The shape before the code.** New work and rework begin with how the thing is done where it will live — the neighbouring code, the platform's or library's own way, the sample the previous attempt left — and not with the first draft that comes to mind. The shape is written down before the code: what it is, what it gives, what it depends on, what it refuses, and which alternatives lost and why. What is missing to answer this is found out in the same step: a decision that rests on a guess is a defect. The agreement is about the shape; the code follows it.
+
 **Questions in a batch, with a default** — so that "yes, that way" answers them. Zero questions on a task that has a spec is suspicious. One round of questions before the code is cheaper than three reworks after it.
 
 **Challenge is the norm.** Words are not taken as truth: verify, doubt, name the weak spots — in the decisions of the user and of the agent alike. Agreement out of politeness is a loss. The goal of the argument is truth, not agreement.
 
 **Report by evidence.** A handover names: what was done; what confirms it — a command and its output, not "it works"; what the check did not show; where the work stopped if unfinished. The same holds for written texts: "works", "faster", "safe" are not written without a command, a measurement or a reference. Success is claimed after observation, not instead of it.
 
-**Checks by the size of the change.** The mapping "type of change → set of checks" lives in the project and is not chosen anew for every change; the full set is for changes that touched logic. Edits of texts and data are checked pointwise. A move or a rename is not a text edit: anything that depends on location is checked by a run.
+**Checks by the size of the change.** The mapping "type of change → set of checks" lives in the project and is not chosen anew for every change; the full set is for changes that touched logic. Edits of texts and data are checked pointwise. A move or a rename is not a text edit: anything that depends on location is checked by a run. A check is written so that what is legitimate does not fall under it; a legitimate hit is named in the report and the check is corrected — the text is not edited to satisfy it.
 
 **Agent steps are the main cost.** Related edits go in one pass; independent checks run in parallel and are designed as such; intermediate runs between small edits are not repeated. Large outputs live on disk — extracts come into the conversation.
 
@@ -127,4 +129,4 @@ Kit: https://github.com/Vensus137/Coreness-Kit.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.2 (2026-10-06)
+Version: 1.3 (2026-10-06)
