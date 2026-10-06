@@ -13,9 +13,11 @@ cases. Taken into a project as a snapshot, in full.
 
 ## How it is used
 
-A project keeps a snapshot of the kit: the file `AGENTS.md` and the folder `skills/`, copied whole. The
-address of the kit and the version of the snapshot are in the tail of `AGENTS.md`. A fresh snapshot
-replaces the previous one in full, and what will change is shown before the replacement.
+A project keeps a snapshot of the kit: the file `AGENTS.md` and the folder `skills/`, copied whole. Where
+the environment carries the procedures itself — as DeepSeek Harness does — the snapshot is the file
+`AGENTS.md`, and the procedures live with the environment at the same revision. The address of the kit and
+the version of the snapshot are in the tail of `AGENTS.md`. A fresh snapshot replaces the previous one in
+full, and what will change is shown before the replacement.
 
 This repository is the canon. A fix made in a project is brought back here in the same pass, so that the
 next snapshot does not overwrite it. Local specifics of a project never live here: they belong to the
