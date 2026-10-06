@@ -30,6 +30,8 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 
 **Report by evidence.** A handover names: what was done; what confirms it — a command and its output, not "it works"; what the check did not show; where the work stopped if unfinished. The same holds for written texts: "works", "faster", "safe" are not written without a command, a measurement or a reference. Success is claimed after observation, not instead of it.
 
+**A retelling is not a reading.** A rule, a path, a number or a mechanism the work will stand on is taken from its source at the moment it becomes load-bearing; a summary, a review's own words or the memory of the one who read it is a prompt to open the source, not a substitute for it.
+
 **Checks by the size of the change.** The mapping "type of change → set of checks" lives in the project and is not chosen anew for every change; the full set is for changes that touched logic. Edits of texts and data are checked pointwise. A move or a rename is not a text edit: anything that depends on location is checked by a run. A check is written so that what is legitimate does not fall under it; a legitimate hit is named in the report and the check is corrected — the text is not edited to satisfy it.
 
 **Agent steps are the main cost.** Related edits go in one pass; independent checks run in parallel and are designed as such; intermediate runs between small edits are not repeated. Large outputs live on disk — extracts come into the conversation.
@@ -134,4 +136,4 @@ the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.7 (2026-10-06)
+Version: 1.8 (2026-10-06)

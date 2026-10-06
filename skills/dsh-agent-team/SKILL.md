@@ -85,6 +85,14 @@ moment rather than wait for the work to end.
     (`TEAM_TASK_HAS_DEPENDENTS`). What stays in the log is a tombstone, not a card: out of the list, out of
     the count, and unaddressable afterwards. The board's own ceiling is a count of cards that are not
     deleted, and unlike the roster it gives room back.
+12. **A card for anything a reader will look at carries measured values.** The sizes, the fills, the
+    separator, the rule behind a number — taken from the source of what is being copied before the code is
+    written. An adjective ("like the host's", "as in the neighbouring screen") leaves the executor unable
+    both to draw it and to check it, and settles only by a rework; measured values let them do both.
+13. **Cards that run at the same time get separate working copies** (`git worktree add`): one tree with two
+    executors has one index and one set of write zones, and a commit takes what a neighbour left staged. One
+    zone — one writer stays the rule; the working copy is what makes parallel work real. In a shared tree a
+    commit names its paths (`git commit -- <paths>`).
 
 ## How work is accepted
 
