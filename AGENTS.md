@@ -127,6 +127,11 @@ In full force, like the main ones. Friction or benefit noticed — say it in the
 
 Kit: https://github.com/Vensus137/Coreness-Kit.
 
+The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The file goes into the project,
+the skills into the user's home directory (for example `~/.dsh/skills`); where a project has its own place
+for the skills, that is the one used. A fresh kit is taken from the repository, not from a copy on disk;
+the file and the skills are updated together.
+
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.6 (2026-10-06)
+Version: 1.7 (2026-10-06)
