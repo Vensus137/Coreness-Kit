@@ -63,7 +63,11 @@ moment rather than wait for the work to end.
 7. **A milestone is named in the brief.** Not fitting into it means an intermediate report and a stop: a
    silent long run is indistinguishable from a slow executor.
 8. **Members are created for the work.** "For the future" in advance — no: a living member costs attention,
-   and a conversation with them costs steps.
+   and a conversation with them costs steps. The team has a ceiling of eight members, and the platform
+   refuses the ninth outright (`Team member limit 8 reached`); a member is not retired by any tool, so a
+   full team means reusing a member for the next subject, not adding one. A member that has exhausted its
+   context is not revived: its subject moves to another member, and everything found on the way — notes,
+   helpers — stays on disk, where the one who takes it up reads it.
 9. **A card revision is a mechanical check.** An edit without a current revision is rejected with a
    refusal; on seeing it — take the fresh revision, check what changed and repeat. The discipline is
    needed not for protection but to notice someone else's change.

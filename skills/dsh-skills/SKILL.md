@@ -1,11 +1,11 @@
 ---
 name: dsh-skills
-description: "How a procedure is added in DeepSeek Harness: file skills from the user, project or shared roots, and environment skills registered by a layer. Covers the roots and their ranks, the profile row that turns file discovery on, which door to choose, and how to check that a procedure has arrived. English triggers: dsh skills, add skill, skill roots, environment skill."
+description: "How a procedure is added in DeepSeek Harness: the roots a session scans for file procedures, their ranks, the row that turns the file door on, which root to choose, and how to check that a procedure has arrived. English triggers: dsh skills, add skill, skill roots, install a skill."
 ---
 
 # Procedures in DeepSeek Harness
 
-A procedure reaches agents by one of two doors: a file in a scanned root, or a registration by a layer.
+A procedure reaches agents by one of two doors: a file in a scanned root, or a registration by a plugin. The first is the door of this kit; the second belongs to the platform's own delivery and is named here only so that it is not confused with the first.
 
 ## File skills
 
@@ -29,19 +29,18 @@ A procedure is a folder `<name>/SKILL.md` or a flat file `<name>.md` at the top 
 
 After one restart the roots work for every project of the profile. Verified in the workshop profile: without the row the files stay invisible to the session, with it `reflection` loads from `<dsh home>/skills`.
 
-## Environment skills
+## Procedures inside a package
 
-A procedure that must live and die together with the environment is registered by code: the body lives in a module of the layer, the layer declares the service it needs (`inject: ['skills']`), the registration is `ctx.skills.register(...)` on load of the layer. The price is a restart, and the procedure disappears together with the layer without leaving anything in someone else's files. This is how `coreness-map` and `coreness-health` live.
+The platform carries procedures of its own inside packages: a row points the provider's `customSkillDirs` at a folder of the package, and a package can also register a procedure by code on load of its layer. Both doors exist, both are the platform's own, and a product may need them for its own delivery. This kit does not use either: its procedures are files in a root the environment scans, and a body in code is a procedure whose text no one edits as text. A folder in the root of a repository is not a door at all.
 
 ## Which door to choose
 
 - Needed in every project of the machine, no repository involved — a file in `<dsh home>/skills`.
 - Needed by one repository — a file in `<project>/.dsh/skills`, or in `.agents/skills` when the procedure is shared with other agents.
-- Part of the environment, must go away with it — a registration by the layer.
 
 ## The check
 
-Ask the session catalogue, or call the procedure by name: it is named, it loads, and its base directory points at the root it came from. For a layer procedure the provider shows as `runtime`.
+Ask the session catalogue, or call the procedure by name: it is named, it loads, and its base directory points at the root it came from.
 
 ## What not to do
 
