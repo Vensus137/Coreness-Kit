@@ -99,9 +99,9 @@ Secrets live only in `.env`: a file outside git, values never appear in chats, l
 
 ## Texts
 
-The documents of the project are read by an agent: a cold session must enter the work quickly and not be mistaken. The user reads the conversation; of the documents, two doors are open — README and the project picture.
+The documents of the project are read by an agent: a cold session must enter the work quickly and not be mistaken. The user reads the conversation; of the documents, the project picture is their door, and a README where the project has one.
 
-- **One language per project.** Neighbouring documents set it; a new document is written in the same one.
+- **One language per project.** Neighbouring documents set it; a new document is written in the same one. The snapshot of the kit is a document of the kit: its language does not set the project's.
 - **The text is impersonal.** "I", "we", "you" do not appear: the text speaks of its subject. "We decided" ages together with its authors; "it is decided" does not.
 - **One subject, one place.**
 - **A document lives by being updated.** An artifact without an update loop ages and lies — worse than absence: such a file is not started. The memory of the project is PROJECT.md; contracts live in the code.
@@ -127,4 +127,4 @@ Kit: https://github.com/Vensus137/Coreness-Kit.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.1 (2026-10-06)
+Version: 1.2 (2026-10-06)
