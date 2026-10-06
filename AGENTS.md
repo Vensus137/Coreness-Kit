@@ -129,4 +129,4 @@ Kit: https://github.com/Vensus137/Coreness-Kit.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.4 (2026-10-06)
+Version: 1.5 (2026-10-06)

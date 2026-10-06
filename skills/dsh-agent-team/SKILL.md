@@ -63,16 +63,25 @@ moment rather than wait for the work to end.
 7. **A milestone is named in the brief.** Not fitting into it means an intermediate report and a stop: a
    silent long run is indistinguishable from a slow executor.
 8. **Members are created for the work.** "For the future" in advance — no: a living member costs attention,
-   and a conversation with them costs steps. The team has a ceiling of eight members, and the platform
-   refuses the ninth outright (`Team member limit 8 reached`); a member is not retired by any tool, so a
-   full team means reusing a member for the next subject, not adding one. A member that has exhausted its
-   context is not revived: its subject moves to another member, and everything found on the way — notes,
-   helpers — stays on disk, where the one who takes it up reads it.
+   and a conversation with them costs steps. The roster never gives a place back: every creation is counted
+   for the life of the session — failed ones too, and the name is spent with it — and the next is refused
+   with `Team member limit <n> reached`. The ceiling is a config field of the team's own row: eight in this
+   environment, sixteen by default in the platform's code, changed only by a patch row. A member that has
+   exhausted its context is not revived: its subject moves to another member, and everything found on the
+   way — notes, helpers — stays on disk, where whoever takes the subject up reads it. A spent roster and a
+   subject that has changed are the two reasons to start a new session: a new session begins with an empty
+   roster and an empty board, while the old team stays whole inside its own session log, and nothing
+   migrates from one session to another.
 9. **A card revision is a mechanical check.** An edit without a current revision is rejected with a
    refusal; on seeing it — take the fresh revision, check what changed and repeat. The discipline is
    needed not for protection but to notice someone else's change.
 10. **A file is edited after a fresh read.** The tool refuses if the file changed since the read; the
     refusal is not muted: the file is re-read and the edit repeated.
+11. **The board has a bottom.** A card that is no longer needed leaves the board: `delete` is implemented
+    and is called by the card's owner or by the lead; only a card that still blocks another one is refused
+    (`TEAM_TASK_HAS_DEPENDENTS`). What stays in the log is a tombstone, not a card: out of the list, out of
+    the count, and unaddressable afterwards. The board's own ceiling is a count of cards that are not
+    deleted, and unlike the roster it gives room back.
 
 ## How work is accepted
 
