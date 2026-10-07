@@ -80,7 +80,7 @@ The rest is the contract of the executor, read in full:
 
 **Completeness checklist** — collect as much as possible, including what the user has not thought about; what is unknown goes to the questions: scenarios and the user; edges and failures (empty/many, no rights, an integration down, a repeated request); data and constraints; live steps (what goes into the live environment and who performs it); consequences and risks; acceptance criteria — verifiable; what is out of scope.
 
-**The user approves and accepts.** The author does not accept their own work: "done" is said by the acceptance criterion, verified by a run, not by the author.
+**The user approves and accepts.** The author does not accept their own work: "done" is said by the acceptance criterion, verified by a run, not by the author. What is accepted is the merged result, not the reports alone.
 
 Technical conventions of the project live in PROJECT.md: stack, storage, patterns. When building a spec — check against the picture: propose what fits and name the reason; a deviation is voiced, the default is not applied silently.
 
@@ -138,7 +138,7 @@ In full force, like the main ones. Friction or benefit noticed — say it in the
 - **A brief before the work:** the subject and where it lives, named as the executor will see it; the acceptance criterion with what confirms it; what the work stands on — in the brief or in a file it names.
 - **One brief — one subject.** What is noticed nearby does not become a second task in the same brief: it goes back in words to whoever handed the work over.
 - **A subject returns to whoever did it** while that one is still there; when it is gone, the subject is rebuilt from the files left for it, not from memory.
-- **A milestone is named, and not fitting inside it means a report and a stop:** a silent long run is indistinguishable from a slow executor.
+- **A milestone is named in the brief, and not fitting inside it means a report and a stop:** a silent long run is indistinguishable from a slow executor.
 - **Work that is no longer needed is stopped and closed with a reason** by whoever handed it over: a silent stop leaves no record for whoever reads the history after.
 - **One voice to the user.** Reports go to whoever handed the work over, not to the user; that one names the state — what is in work, who does what, what waits for a decision.
 
@@ -158,4 +158,4 @@ the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.11 (2026-10-08)
+Version: 1.12 (2026-10-08)
