@@ -29,17 +29,6 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 - **A cancelled card is closed by the lead with the reason in words:** interrupting a member is silent and leaves no record of why.
 - **Parallel cards get separate working copies** (`git worktree add`); in a shared tree a commit names its paths (`git commit -- <paths>`).
 
-## A challenge round
-
-A round is a refuter turned on lines that are about to become irreversible — a version number, a law line, a picture paragraph — not a sweep over everything just written. Words are not taken as truth (`AGENTS.md`, "Challenge is the norm"); what is added here is the price.
-
-- **The brief names** the artifact and its revision (a commit or a version, not "the file"), the decisions to answer, what acceptance means, the boundary — its own file only — and the budget. The card carries them, as every card does.
-- **A verdict is one line:** `<claim> — confirmed | refuted | unclear — <file:line> — <what changes, who applies>`. A verdict that cannot name its source says `unclear`; a confirmation is not written at all.
-- **The report is no longer than the text it checks.** The failure mode is prose: verdicts that confirm lines which do not change still cost their bytes, and the report is measured by its length, not by the number of its verdicts.
-- **It is not spent** where a command answers — a duplicate, a stale address, a version — nor on one line of text, nor while the verdicts of an earlier round lie unapplied.
-- **One refuter, not a second round:** a round over the previous round's verdicts is not scheduled; a second refuter is taken where the text is expensive to undo, and not earlier.
-- **The text's owner applies the verdicts in the same pass** — the lead, for the law; a challenger owns no line of it. A verdict nobody applied is named where the work is reported, and if it is put off it is a note with a holder.
-
 ## Waiting and reporting
 
 - Waiting wakes on any team change — a status, a task update, an incoming message — and only a message carries a report. `inactive` means no turn is executing, not a task result: a required member that is inactive without a report is woken by a message, not waited for, and `wait_agent` answers `noProgress` when nobody is running.
