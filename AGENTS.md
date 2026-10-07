@@ -40,6 +40,12 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 
 **Commit and push are part of the work.** A finished and verified piece is committed at once, without "should I commit?": history provides the rollback. The message follows the style of the repository. Only the work of the task goes into the commit. Closing the task goes to the remote in the same pass, without a question — if a remote exists; a push may be held back for a named reason. Intermediate commits accumulate locally. A pull request and rewriting history — on an explicit request.
 
+## In DeepSeek Harness
+
+Only in DeepSeek Harness: in another environment, skip this section whole.
+
+- **Work with other agents here goes through the add-on `dsh-agent-team`.** Read it before the first team action: the tools, the board and its revisions, the refusal codes and the ceilings live there and not in this file, and a compaction does not bring them back.
+
 ## Spec
 
 A spec is the contract of one task: SPEC.md in the root, living exactly for the duration of the task. Parallel tasks in one tree are separated by write zones: one area — one executor. A separate working copy is taken when the work goes outside the shared tree — another machine, a separate clone. It is written for an agent: it holds context between sessions and is handed to subagents, and replaces the planning mode — the scaffolding is kept in the project, not borrowed from the environment. By the start of the work everything needed is collected in it, including the non-obvious; what is missing is clarified with the user. The file is self-sufficient for someone who has not seen the discussion.
@@ -137,4 +143,4 @@ the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.9 (2026-10-07)
+Version: 1.10 (2026-10-08)

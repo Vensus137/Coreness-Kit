@@ -9,14 +9,16 @@ A procedure reaches agents by one of two doors: a file in a scanned root, or a r
 
 ## File skills
 
-The provider `@deepseek-ai/dsh-skill-filesystem` scans four roots in rank order:
+The provider `@deepseek-ai/dsh-skill-filesystem` scans four roots in rank order, and two more exist when a row configures them:
 
 | Rank | Root | Source |
 | --- | --- | --- |
 | 100 | `<project>/.dsh/skills` | `project-dsh` |
 | 200 | `<project>/.agents/skills` | `project-agents` |
+| 300 | the folders a row names | `customSkillDirs` |
 | 400 | `<dsh home>/skills` | `user-dsh` |
 | 500 | `~/.agents/skills` | `user-agents` |
+| 600 | a folder shipped inside a package | `bundledSkillDir` |
 
 A procedure is a folder `<name>/SKILL.md` or a flat file `<name>.md` at the top of a root; nested `**/SKILL.md` are deliberately not discovered. The project root is the nearest ancestor holding `.git`; the user DSH root skips its `.system` child. The provider watches the roots, so a new, renamed or deleted procedure reaches the next catalogue without a restart.
 

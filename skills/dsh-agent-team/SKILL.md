@@ -1,122 +1,68 @@
 ---
 name: dsh-agent-team
-description: "Team mode in DeepSeek Harness: how the lead sets and accepts work when the team bundle is enabled — a task board, cards with write zones, mail to members, waiting — and stays in the conversation with the user while executors work. The lead accepts on reports and does not stand in a wait: a report is a message that starts his next turn. A summary of a compacted session can quote an older copy of these rules — the file is the ground, and it is loaded again rather than retold. This environment only: it does not apply in an ordinary dialogue or in other environments. The skill is experimental — friction and benefit go into the conversation. English triggers: agent team, team mode, task board, teammates, delegate."
+description: "Team mode in DeepSeek Harness: the tools a lead drives here — spawn_teammate, send_message, wait_agent, list_agents, team_task_update, interrupt_agent — the card board and its revisions, the refusal codes, the roster ceiling, and what waiting means in this environment. The behaviour of handing work over is in the conventions (AGENTS.md); this procedure carries only what exists here. English triggers: agent team, team mode, task board, teammates, delegate."
 ---
 
-# Team mode (DeepSeek Harness)
+# Team mode in DeepSeek Harness
 
-**Scope — this environment only.** The skill rests on tools that exist nowhere else: a task board with
-card revisions, cards with write zones, mail to members, waiting. In an ordinary dialogue and in other
-environments it does not apply: there the task is handed to a subagent by the ordinary conventions, and
-mixing the two modes is not allowed — the rules would refer to tools that are not there.
+**Only what exists here.** This add-on carries the environment: what the platform itself demands, the tools, the board, the refusals, the ceilings — and the working discipline, which the conventions do not state yet.
 
-**The skill is experimental.** The mode is young: it is run by observation and edited actively. No
-separate reflection is started for it — friction and benefit go into the conversation, and `reflection`
-looks at the findings.
+**This is an add-on, not a law.** It is read on demand, when the team is touched; nothing in it is in force beyond this environment, and nothing from it is worth moving into the conventions: behaviour lives there, mechanics live here. The platform's own text and the tool schemas arrive in every request; this file carries what they do not say — the discipline of the board, the refusals, the ceilings, the two modes.
 
-## Who and when
+**Where this does not apply.** An ordinary dialogue and other environments are not this mode: there the task is handed over by the conventions and by that environment's ordinary delegation. The two are not mixed — with the team bundle on, the ordinary `subagent` and `subagent_fork` doors are turned off, and the rules of one mode would name tools the other does not have.
 
-For the lead — the one who talks to the user. The moment: the team bundle is enabled and there is more
-work than one action. Small things the lead does alone: delegation has its own price — a brief, waiting,
-acceptance.
+**The mode is experimental,** like the platform packages it stands on: it is run by observation, and friction and benefit go into the conversation rather than into a separate reflection.
 
-Together with the bundle comes what the ordinary mode lacks: a board with card revisions, mail to any
-member, waiting, and named members instead of nameless subagents.
+**Who and when.** For the lead — the one who talks to the user. The moment: the team bundle is on — an enabled mode is the user's request, and nothing further is asked for — and the work is bigger than one action.
 
-## Experimental reference
+## Handing work over
 
-Observations about the harness this mode stands on, kept as reference rather than as rules: no check enforces them, and they age with the platform.
+- **A brief before the work:** the subject and the place, the acceptance criterion, and what confirms it; what the work stands on is in the brief or in a file it names, not in the conversation.
+- **One subject — one executor;** what was noticed nearby goes into the report in words, not as a second task in the same brief.
+- **One zone — one writer:** two executors are not put on one tree.
+- **The same subject returns to the same executor** while its address lives; when the address is gone, the subject is rebuilt from the files left for it, not from memory.
+- **A milestone is named,** and not fitting into it means an intermediate report and a stop: a silent long run is indistinguishable from a slow executor.
+- **Acceptance is by evidence,** not by the report: work without evidence is not closed even when it is done, and the author does not accept their own work.
+- **Work that has become unnecessary is stopped and closed with a reason.**
+- **One voice to the user:** the lead names the state — what is in work, who is doing what, what awaits a decision; a member's report goes to the lead.
 
-- **A member's road is its own.** A selection belongs to a session, and the default row only starts fresh ones: a teammate is created on whatever provider and model the session stands on at that moment and keeps them for its life. Switching the session later moves nothing that already exists — work that must ride a new road needs a member created after the switch.
+## What the platform itself demands
 
-## The lead stays in the conversation
+**What the platform demands beyond the conventions.** One thing stands here and not there: the lead reviews the final diff and runs the tests, because the filesystem guard covers read, edit and write, and not formatters, generators and scripts. Creation on the user's request and the final answer waiting for the reports are stated once, in `AGENTS.md` under `In DeepSeek Harness` — this body does not survive a compaction, and a rule stated twice drifts.
 
-That is the point of the mode: while executors work, the lead **does not drop out of the dialogue** —
-clarifies, decides, sets the next thing, gives status. The user must be able to talk to the lead at any
-moment rather than wait for the work to end.
+## Tools
 
-- **Waiting is not a turn of work.** It stops the conversation until the first event, and an event
-  arrives only when a member sends a message: the platform has no separate "work finished" notification.
-  Therefore **reporting is the executor's duty**, not something that happens by itself — and a report,
-  being a message, starts the lead's next turn without anyone standing watch.
-- **The lead accepts on reports; he does not wait for them.** The platform's own collaboration policy says
-  the lead must have the needed reports before the final answer, and this mode reads that sentence as
-  **acceptance**, not as leave to block a turn: a result is not claimed without its reports, while the
-  dialogue goes on — the lead answers, sets the next card, gives status, and is woken by the report when it
-  arrives. Standing still over a report that is already on its way buys nothing and costs the conversation,
-  which is the one thing the mode exists to keep. Waiting is left for the case where the user's own answer
-  *is* the report; then it is named as what it is and not passed off as work.
-- **Work may become unnecessary while it runs.** The conversation is a source of edits too: if after a
-  review the task turns out to be superfluous, the executor is stopped and the card is closed with the
-  words "cancelled: reason". Waiting for a result only to throw it away is a loss of steps. Stopping a
-  member tells the lead nothing: the cancellation is fixed by the lead — with a card and a record.
-- **Status is the lead's:** what is in work, who is doing what, what awaits the user's decision. The lead
-  is also the only one who talks to the user: an executor reports to the lead, not to the user.
+- `spawn_teammate(name, description, prompt, context)` — a member; the brief is its `prompt`. `context: "fresh" | "fork"` — `fresh`, the default, starts without this conversation; `fork` inherits the completed turns of the lead.
+- `team_task_create` / `_get` / `_list` / `_update` — the board; `_update` carries the transition (`claim`, `release`, `edit`, `set_dependencies`, `complete`, `reopen`, `reassign`, `delete`) with the current `expected_revision`. A card carries the brief, the write zones and the acceptance criterion.
+- `send_message(target, message)` — mail; a member's report goes to `lead`. `list_agents` — the roster and who is running; `wait_agent` — the next team change (from ten seconds through one hour, thirty by default); `interrupt_agent` — stop a member's current turn.
+- **Write zones are advisory, not a lock:** an overlap with a card already claimed is warned about and never refused — keeping one zone to one writer is the lead's discipline, not the platform's.
 
-## How a task is run
+## The board
 
-1. **A card before the work.** It holds the subject and the place, the acceptance criterion, the write
-   zones, the evidence. After "done" a card means nothing: there is nothing to check against. The spec of
-   the task is the contract of the lead and the user; the card is the executor's brief for one part of it
-   and does not replace the spec.
-2. **One subject per card.** Something noticed nearby goes into the report in words, not as a second task
-   in the same brief: gluing subjects together gives a long run and no report until the end.
-3. **The brief goes into the task in full.** The executor does not see the lead's conversation with the
-   user. The fields of the brief come from the conventions; what matters here is that the brief travels
-   as a task and is not retold along the way.
-4. **Paths from the root of the project.** The working directory is shared by the members, so "where it
-   was before" and relative landmarks do not work in a brief.
-5. **One zone per executor.** Two people on a folder or a plugin are not started: the edits would collide,
-   and sorting out a collision costs more than doing the work in sequence.
-6. **The executor stays alive.** The next step of the same subject goes to the same executor: they have
-   the context, and a new agent is more expensive. A new one is taken when the subject is different or a
-   fresh view is needed.
-7. **A milestone is named in the brief.** Not fitting into it means an intermediate report and a stop: a
-   silent long run is indistinguishable from a slow executor.
-8. **Members are created for the work.** "For the future" in advance — no: a living member costs attention,
-   and a conversation with them costs steps. The roster never gives a place back: every creation is counted
-   for the life of the session — failed ones too, and the name is spent with it — and the next is refused
-   with `Team member limit <n> reached`. The ceiling is a config field of the team's own row — sixteen by
-   default in the platform's code, and in an environment whatever its profile's patch declares. It is raised
-   from that patch by an `id`-targeted entry that restates the **whole** `config`, since it is replaced and
-   not merged (`maxMembers`, `maxTasks`, `maxPendingMessagesPerMember`, `maxMessageBytes`,
-   `disposalTimeoutMs`); an application restart applies it. A member that has
-   exhausted its context is not revived: its subject moves to another member, and everything found on the
-   way — notes, helpers — stays on disk, where whoever takes the subject up reads it. A spent roster and a
-   subject that has changed are the two reasons to start a new session: a new session begins with an empty
-   roster and an empty board, while the old team stays whole inside its own session log, and nothing
-   migrates from one session to another.
-9. **A card revision is a mechanical check.** An edit without a current revision is rejected with a
-   refusal; on seeing it — take the fresh revision, check what changed and repeat. The discipline is
-   needed not for protection but to notice someone else's change.
-10. **A file is edited after a fresh read.** The tool refuses if the file changed since the read; the
-    refusal is not muted: the file is re-read and the edit repeated.
-11. **The board has a bottom.** A card that is no longer needed leaves the board: `delete` is implemented
-    and is called by the card's owner or by the lead; only a card that still blocks another one is refused
-    (`TEAM_TASK_HAS_DEPENDENTS`). What stays in the log is a tombstone, not a card: out of the list, out of
-    the count, and unaddressable afterwards. The board's own ceiling is a count of cards that are not
-    deleted, and unlike the roster it gives room back.
-12. **A card for anything a reader will look at carries measured values.** The sizes, the fills, the
-    separator, the rule behind a number — taken from the source of what is being copied before the code is
-    written. An adjective ("like the host's", "as in the neighbouring screen") leaves the executor unable
-    both to draw it and to check it, and settles only by a rework; measured values let them do both.
-13. **Cards that run at the same time get separate working copies** (`git worktree add`): one tree with two
-    executors has one index and one set of write zones, and a commit takes what a neighbour left staged. One
-    zone — one writer stays the rule; the working copy is what makes parallel work real. In a shared tree a
-    commit names its paths (`git commit -- <paths>`).
+- **A stale revision is refused** (`TEAM_TASK_STALE_REVISION`): take the fresh revision, see what changed, repeat. The check is there to notice someone else's change, not for protection.
+- **A card no longer needed leaves the board** (`delete`, by its owner or by the lead); only a card that still blocks another is refused (`TEAM_TASK_HAS_DEPENDENTS`). A tombstone stays in the log — out of the list, unaddressable — and, unlike the roster, it gives room back: it takes no `maxTasks`.
+- **A cancelled card is closed by the lead with the reason in words:** interrupting a member is silent and leaves no record of why.
+- **Parallel cards get separate working copies** (`git worktree add`); in a shared tree a commit names its paths (`git commit -- <paths>`).
 
-## How work is accepted
+## Waiting and reporting
 
-- **Report by evidence** — from the conventions: what was done, what confirms it, what the check did not
-  show, where the work stopped.
-- The lead looks at the **named output**, not at the whole work re-read. Doubt is a reason to look at the
-  diff and run a check, not to read everything in a row.
-- **Rework returns to the same executor:** they have the context, and a repeated brief costs more than the
-  edit.
-- **A card is closed with evidence.** Work without evidence is not closed, even if it is done.
+- Waiting wakes on any team change — a status, a task update, an incoming message — and only a message carries a report. `inactive` means no turn is executing, not a task result: a required member that is inactive without a report is woken by a message, not waited for, and `wait_agent` answers `noProgress` when nobody is running.
+- **Reporting is the executor's duty:** there is no separate "work finished" notice, and a report, being a message, starts the lead's next turn without anyone standing watch. Waiting is left for the case where the user's own answer is the report, and is named as what it is.
 
-## What the mode does not change
+## The roster
 
-The role of the lead, the brief, the report by evidence, acceptance, records, "a dead end is a report",
-checks by the size of the change — all of it comes from the conventions. The skill does not repeat them:
-it adds only what arrives together with the bundle.
+- **Members are created for the work** — a living member costs attention, and a conversation with them costs steps.
+- **No place comes back:** every creation counts for the life of the session, failed ones too, and the name is spent with it. The next is refused with `TEAM_MEMBER_LIMIT` ("Team member limit <n> reached").
+- **The ceiling** is `maxMembers` in the team row's `config` — sixteen in the platform's code, and in an environment whatever its profile's patch declares. It is raised from that patch by an `id`-targeted entry that restates the **whole** `config`, since it is replaced and not merged (`maxMembers`, `maxTasks`, `maxPendingMessagesPerMember`, `maxMessageBytes`, `disposalTimeoutMs`); a restart applies it.
+- A member that has exhausted its context is not revived: its subject moves to another member, and everything found on the way stays on disk for whoever takes the subject up.
+- A spent roster and a changed subject are the two reasons to start a new session: a new session begins with an empty roster and an empty board, and nothing migrates between sessions.
+
+## Refusals
+
+Examples, not the whole list: `TEAM_TASK_STALE_REVISION`, `TEAM_TASK_ALREADY_CLAIMED`, `TEAM_TASK_BLOCKED`, `TEAM_TASK_UNAUTHORIZED` (a card is changed by its owner or by the lead), `TEAM_TASK_HAS_DEPENDENTS`, `TEAM_TASK_DELETED`, `TEAM_TASK_NOT_FOUND`, `TEAM_TASK_LIMIT`, `TEAM_LEAD_REQUIRED`, `TEAM_MEMBER_LIMIT`, `FS_STALE_VERSION`. A refusal is read and acted on, never muted: take the fresh state and repeat the step.
+
+## Facts of this environment
+
+Observations about the harness, kept as reference rather than as rules: no check enforces them, and they age with the platform.
+
+- **A member's road is its own.** A selection belongs to a session, and the default row only starts fresh ones: a member is created on whatever provider and model the session stands on at that moment and keeps them for its life. Work that must ride a new road needs a member created after the switch.
