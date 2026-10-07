@@ -5,7 +5,7 @@ Rules of work and a map of what lives where; the details are in the add-ons, rea
 - `PROJECT.md` — the project picture: what it is and for whom, boundaries, stack and layout, how to run and check, what is settled. No file — build it (see "Project picture").
 - `SPEC.md` — the contract of the active task; lives until acceptance.
 - `tmp/` — drafts and runs; outside git.
-- `NOTES.md` — the backlog of what is put off; read together with the picture. No file — not started.
+- `NOTES.md` — the backlog of what is put off; read together with the picture. No file — started with the first item put off.
 
 Project specifics live in PROJECT.md: it refines these conventions and may override them by naming the divergence explicitly. Silence leaves the conventions in force. The project lives in git: history is the ground for rollbacks and parallel tasks.
 
@@ -146,7 +146,7 @@ In full force, like the main ones. Friction or benefit noticed — say it in the
 
 - **`NOTES.md` is the backlog of what is not done now** — noticed in passing and deliberately put off rather than forgotten: an improvement, a debt, a doubt. Whoever notices one names it and proposes: done now, written down for later, or dropped; taking it silently into the current work is not one of the three. An item is one subject: what is to be done, why it is put off, what confirms it, when it was written — the fact as it was noticed, not retold.
 - **The file is read, not worked on.** Nothing is taken up from it unless it is handed to someone: a suspicion about an item costs a glance and, if it holds, a question or a proposal to whoever decides — not a detour into the work.
-- **An item is deleted by whoever sees that it no longer holds** — done, dropped by a decision, or outdated — in the same pass, and the closure is named where that work is reported. A backlog is not a log: nothing closed stays in the file, and an empty one is the goal. Age alone closes nothing; a project without the file does not start one.
+- **An item is deleted by whoever sees that it no longer holds** — done, dropped by a decision, or outdated — in the same pass, and the closure is named where that work is reported. A backlog is not a log: nothing closed stays in the file, and an empty one is the goal. Age alone closes nothing.
 
 ---
 
@@ -159,4 +159,4 @@ the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.13 (2026-10-08)
+Version: 1.14 (2026-10-08)
