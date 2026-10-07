@@ -5,7 +5,7 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 
 # Team mode in DeepSeek Harness
 
-**Only what exists here.** This procedure carries the environment: what the platform itself demands, the tools, the board, the refusals, the ceilings — and the working discipline of this mode.
+**Only what exists here.** This procedure carries the environment: the tools, the board, the refusals, the ceilings — what exists in this mode and nowhere else.
 
 **A procedure, not the platform.** It is read when the team is touched, and every line of it describes this mode only. The platform's own text and the tool schemas arrive in every request; this file carries what they do not say — the discipline of the board, the refusals, the ceilings, the two modes.
 
@@ -14,17 +14,6 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 **The mode is experimental,** like the platform packages it stands on: it is run by observation, and friction and benefit are named in the conversation.
 
 **Who and when.** For the lead — the one who talks to the user. The moment: the team bundle is on, and the work is bigger than one action.
-
-## Handing work over
-
-- **A brief before the work:** the subject and the place, the acceptance criterion, and what confirms it; what the work stands on is in the brief or in a file it names, not in the conversation.
-- **One subject — one executor;** what was noticed nearby goes into the report in words, not as a second task in the same brief.
-- **One zone — one writer:** two executors are not put on one tree.
-- **The same subject returns to the same executor** while its address lives; when the address is gone, the subject is rebuilt from the files left for it, not from memory.
-- **A milestone is named,** and not fitting into it means an intermediate report and a stop: a silent long run is indistinguishable from a slow executor.
-- **Acceptance is by evidence,** not by the report: work without evidence is not closed even when it is done, and the author does not accept their own work.
-- **Work that has become unnecessary is stopped and closed with a reason.**
-- **One voice to the user:** the lead names the state — what is in work, who is doing what, what awaits a decision; a member's report goes to the lead.
 
 ## Tools
 

@@ -5,6 +5,7 @@ Rules of work and a map of what lives where; the details are in the add-ons, rea
 - `PROJECT.md` — the project picture: what it is and for whom, boundaries, stack and layout, how to run and check, what is settled. No file — build it (see "Project picture").
 - `SPEC.md` — the contract of the active task; lives until acceptance.
 - `tmp/` — drafts and runs; outside git.
+- `NOTES.md` — the backlog of what is put off; read together with the picture. No file — not started.
 
 Project specifics live in PROJECT.md: it refines these conventions and may override them by naming the divergence explicitly. Silence leaves the conventions in force. The project lives in git: history is the ground for rollbacks and parallel tasks.
 
@@ -132,6 +133,20 @@ In full force, like the main ones. Friction or benefit noticed — say it in the
 
 - **A dead end is a report, not a siege.** Signs of a dead end: the solution does not stand on the facts — it cannot be implemented, the inputs diverged, it went wrong; or several different approaches gave no progress. Once the dead end is recognised, the search stops: a short report goes up — where it stopped, what was tried, what is proposed; the addressee is the task setter, and under delegation the lead agent. The reverse boundary: the rule is about a dead end, not about the first difficulty; the executor makes reasonable attempts before reporting.
 
+**Handing work over**
+
+- **A brief before the work:** the subject and where it lives, named as the executor will see it; the acceptance criterion with what confirms it; what the work stands on — in the brief or in a file it names.
+- **One brief — one subject.** What is noticed nearby does not become a second task in the same brief: it goes back in words to whoever handed the work over.
+- **A subject returns to whoever did it** while that one is still there; when it is gone, the subject is rebuilt from the files left for it, not from memory.
+- **A milestone is named, and not fitting inside it means a report and a stop:** a silent long run is indistinguishable from a slow executor.
+- **Work that is no longer needed is stopped and closed with a reason** by whoever handed it over: a silent stop leaves no record for whoever reads the history after.
+- **One voice to the user.** Reports go to whoever handed the work over, not to the user; that one names the state — what is in work, who does what, what waits for a decision.
+
+**Notes**
+
+- **`NOTES.md` is the backlog of what is not done now** — noticed in passing and deliberately put off rather than forgotten: an improvement, a debt, a doubt. Whoever notices one names it and proposes: done now, written down for later, or dropped; taking it silently into the current work is not one of the three. An item is one subject: what is to be done, what confirms it, when it was written — the fact as it was noticed, not retold.
+- **An item is closed by whoever sees that it no longer holds** — the thing done or a decision dropping it — in the same pass, named where the work is reported; the item points at what was written. Age alone closes nothing; a project without the file does not start one.
+
 ---
 
 Kit: https://github.com/Vensus137/Coreness-Kit.
@@ -143,4 +158,4 @@ the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.10 (2026-10-08)
+Version: 1.11 (2026-10-08)
