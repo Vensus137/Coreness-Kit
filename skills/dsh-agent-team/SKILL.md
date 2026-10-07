@@ -31,10 +31,15 @@ moment rather than wait for the work to end.
 
 - **Waiting is not a turn of work.** It stops the conversation until the first event, and an event
   arrives only when a member sends a message: the platform has no separate "work finished" notification.
-  Therefore **reporting is the executor's duty**, not something that happens by itself.
-- **Wait when the work cannot be finished without it.** Before the final answer to the user the lead must
-  have the reports of the members that are needed: without them the work is not accepted. Inside the work
-  waiting is not needed — the board, an answer to the user, the next card and acceptance take its place.
+  Therefore **reporting is the executor's duty**, not something that happens by itself — and a report,
+  being a message, starts the lead's next turn without anyone standing watch.
+- **The lead accepts on reports; he does not wait for them.** The platform's own collaboration policy says
+  the lead must have the needed reports before the final answer, and this mode reads that sentence as
+  **acceptance**, not as leave to block a turn: a result is not claimed without its reports, while the
+  dialogue goes on — the lead answers, sets the next card, gives status, and is woken by the report when it
+  arrives. Standing still over a report that is already on its way buys nothing and costs the conversation,
+  which is the one thing the mode exists to keep. Waiting is left for the case where the user's own answer
+  *is* the report; then it is named as what it is and not passed off as work.
 - **Work may become unnecessary while it runs.** The conversation is a source of edits too: if after a
   review the task turns out to be superfluous, the executor is stopped and the card is closed with the
   words "cancelled: reason". Waiting for a result only to throw it away is a loss of steps. Stopping a
