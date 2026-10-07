@@ -144,8 +144,9 @@ In full force, like the main ones. Friction or benefit noticed — say it in the
 
 **Notes**
 
-- **`NOTES.md` is the backlog of what is not done now** — noticed in passing and deliberately put off rather than forgotten: an improvement, a debt, a doubt. Whoever notices one names it and proposes: done now, written down for later, or dropped; taking it silently into the current work is not one of the three. An item is one subject: what is to be done, what confirms it, when it was written — the fact as it was noticed, not retold.
-- **An item is closed by whoever sees that it no longer holds** — the thing done or a decision dropping it — in the same pass, named where the work is reported; the item points at what was written. Age alone closes nothing; a project without the file does not start one.
+- **`NOTES.md` is the backlog of what is not done now** — noticed in passing and deliberately put off rather than forgotten: an improvement, a debt, a doubt. Whoever notices one names it and proposes: done now, written down for later, or dropped; taking it silently into the current work is not one of the three. An item is one subject: what is to be done, why it is put off, what confirms it, when it was written — the fact as it was noticed, not retold.
+- **The file is read, not worked on.** Nothing is taken up from it unless it is handed to someone: a suspicion about an item costs a glance and, if it holds, a question or a proposal to whoever decides — not a detour into the work.
+- **An item is deleted by whoever sees that it no longer holds** — done, dropped by a decision, or outdated — in the same pass, and the closure is named where that work is reported. A backlog is not a log: nothing closed stays in the file, and an empty one is the goal. Age alone closes nothing; a project without the file does not start one.
 
 ---
 
@@ -158,4 +159,4 @@ the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.12 (2026-10-08)
+Version: 1.13 (2026-10-08)
