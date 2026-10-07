@@ -1,17 +1,17 @@
 ---
 name: dsh-agent-team
-description: "Team mode in DeepSeek Harness: the tools a lead drives here — spawn_teammate, send_message, wait_agent, list_agents, team_task_update, interrupt_agent — the card board and its revisions, the refusal codes, the roster ceiling, and what waiting means in this environment. The behaviour of handing work over is in the conventions (AGENTS.md); this procedure carries only what exists here. English triggers: agent team, team mode, task board, teammates, delegate."
+description: "Team mode in DeepSeek Harness: the tools a lead drives here — spawn_teammate, send_message, wait_agent, list_agents, team_task_update, interrupt_agent — the card board and its revisions, the refusal codes, the roster ceiling, and what waiting means in this environment. English triggers: agent team, team mode, task board, teammates, delegate."
 ---
 
 # Team mode in DeepSeek Harness
 
-**Only what exists here.** This add-on carries the environment: what the platform itself demands, the tools, the board, the refusals, the ceilings — and the working discipline, which the conventions do not state yet.
+**Only what exists here.** This procedure carries the environment: what the platform itself demands, the tools, the board, the refusals, the ceilings — and the working discipline of this mode.
 
-**This is an add-on, not a law.** It is read on demand, when the team is touched; nothing in it is in force beyond this environment, and nothing from it is worth moving into the conventions: behaviour lives there, mechanics live here. The platform's own text and the tool schemas arrive in every request; this file carries what they do not say — the discipline of the board, the refusals, the ceilings, the two modes.
+**A procedure, not the platform.** It is read when the team is touched, and every line of it describes this mode only. The platform's own text and the tool schemas arrive in every request; this file carries what they do not say — the discipline of the board, the refusals, the ceilings, the two modes.
 
-**Where this does not apply.** An ordinary dialogue and other environments are not this mode: there the task is handed over by the conventions and by that environment's ordinary delegation. The two are not mixed — with the team bundle on, the ordinary `subagent` and `subagent_fork` doors are turned off, and the rules of one mode would name tools the other does not have.
+**Where this does not apply.** An ordinary dialogue and other environments are not this mode: there the work is handed over by that environment's own means. The two are not mixed — with the team bundle on, the ordinary `subagent` and `subagent_fork` doors are turned off, and the rules of one mode would name tools the other does not have.
 
-**The mode is experimental,** like the platform packages it stands on: it is run by observation, and friction and benefit go into the conversation rather than into a separate reflection.
+**The mode is experimental,** like the platform packages it stands on: it is run by observation, and friction and benefit are named in the conversation.
 
 **Who and when.** For the lead — the one who talks to the user. The moment: the team bundle is on — an enabled mode is the user's request, and nothing further is asked for — and the work is bigger than one action.
 
@@ -25,10 +25,6 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 - **Acceptance is by evidence,** not by the report: work without evidence is not closed even when it is done, and the author does not accept their own work.
 - **Work that has become unnecessary is stopped and closed with a reason.**
 - **One voice to the user:** the lead names the state — what is in work, who is doing what, what awaits a decision; a member's report goes to the lead.
-
-## What the platform itself demands
-
-**What the platform demands beyond the conventions.** One thing stands here and not there: the lead reviews the final diff and runs the tests, because the filesystem guard covers read, edit and write, and not formatters, generators and scripts. Creation on the user's request and the final answer waiting for the reports are stated once, in `AGENTS.md` under `In DeepSeek Harness` — this body does not survive a compaction, and a rule stated twice drifts.
 
 ## Tools
 

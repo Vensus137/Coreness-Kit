@@ -29,7 +29,7 @@ A procedure is a folder `<name>/SKILL.md` or a flat file `<name>.md` at the top 
   disabled: false
 ```
 
-After one restart the roots work for every project of the profile. Verified in the workshop profile: without the row the files stay invisible to the session, with it `reflection` loads from `<dsh home>/skills`.
+After one restart the roots work for every project of the profile. Verified in the workshop profile: without the row the files stay invisible to the session, with it a procedure loads from `<dsh home>/skills`.
 
 ## Procedures inside a package
 
