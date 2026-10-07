@@ -40,6 +40,9 @@ Addresses: <how an address in this file resolves>
   place of the original.
 - **A negative result is a result.** "Not found" is written as searched-and-not-found, with what was searched;
   never as absence.
+- **The corpus is the thing as it stands.** A measurement is taken against the code and the state as they are
+  now; records of earlier eras are a corpus only when the subject *is* the era — code that has been rewritten
+  since leaves noise that reads like evidence. Where only history exists, say so, and name the window it covers.
 - **The conclusion leaves, the review stays.** What entered the work is lifted into the project picture; the
   review remains as the trace.
 - **A review that lies is worse than none.** Before work rests on a review, a fresh reader — not its author —
