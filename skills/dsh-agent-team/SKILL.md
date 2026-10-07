@@ -23,6 +23,12 @@ acceptance.
 Together with the bundle comes what the ordinary mode lacks: a board with card revisions, mail to any
 member, waiting, and named members instead of nameless subagents.
 
+## Experimental reference
+
+Observations about the harness this mode stands on, kept as reference rather than as rules: no check enforces them, and they age with the platform.
+
+- **A member's road is its own.** A selection belongs to a session, and the default row only starts fresh ones: a teammate is created on whatever provider and model the session stands on at that moment and keeps them for its life. Switching the session later moves nothing that already exists — work that must ride a new road needs a member created after the switch.
+
 ## The lead stays in the conversation
 
 That is the point of the mode: while executors work, the lead **does not drop out of the dialogue** —
