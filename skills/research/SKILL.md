@@ -1,54 +1,21 @@
 ---
 name: research
-description: "Research kept in the repository: how a question about someone else's code is answered by reading it once and keeping the answer — one question per file, the version that was read, the answer with addresses in the code, what could not be checked, and the verification a review passes before work rests on it. Applies where a project keeps reviews in a folder (for instance `research/`); stack-agnostic, works in any environment that can read files. English triggers: research, review, write a review, read the code, check against the code."
+description: "A question about someone else's code — a platform, a library, a neighbour's module — answered by reading it once: read-only, a negative result written as searched-and-not-found, the code as it stands now, quotations verbatim, and a sample of the addresses checked by a fresh reader. Applies before a decision rests on a guess whose price will be paid twice. English triggers: research, review, read the code, check against the code, what does the platform do."
 ---
 
-# Research (a question answered by reading the code)
+# Research — a question about someone else's code, answered by reading it
 
-**When it applies.** A question about a codebase that is not ours — a platform, a library, a neighbour's
-module — whose answer will be relied on more than once: how something is addressed, what happens on a
-failure, where the limit is, what the platform does before we do anything. The answer is read out of the
-code; a model's memory is not an answer, and a decision resting on a guess is a defect.
+**When it applies.** The answer is not in the tree, a decision would rest on a guess, and the wrong guess will be paid again — by a rework, or by a bug that reads like behaviour. The answer is read out of the code: a model's memory is not an answer, and a retelling is not a reading.
 
-**Why a file.** The answer outlives the session that found it. Written down, it is read by the next session
-in a minute; asked again, it costs the same search again and drifts with every retelling.
+**Where the answer goes.** Into the work that needs it — the picture, the README beside the code, the paragraph that decided. A file of its own is written when the answer is relied on more than once, and it names at birth what will consume it; a file nothing points at is deleted by whoever notices, as any document is.
 
-## The frame
-
-```markdown
-# <the subject, said as a title>
-
-Question: <the one question the review answers, one line>
-Platform: <what was read, and its version>
-Read by: <the archive / the sources / the live system>; no changes were made
-Addresses: <how an address in this file resolves>
-
-<the answer; then the evidence — addresses in the code, commands, numbers; then what could not be checked>
-```
-
-- One review — one question: `<folder>/<topic>.md`.
-- The version is not decoration: without it the review lies a month later.
-- The answer comes first and stands alone; the evidence follows it, so a reader may stop at the answer and a
-  doubter has somewhere to go.
+**The form of the file is the project's** — its folder, its header, its version line. This procedure carries the act, not the frame.
 
 ## Rules
 
 - **Read-only.** A review changes nothing — not the code it reads, not the system it watches.
-- **Every claim carries an address**: a file and a line, a command and its output, a number with the way it
-  was taken. A claim without an address is not written at all; its place is "what could not be checked".
-- **Quotations are verbatim**, in the language of the code — they are retold only as a translation, never in
-  place of the original.
-- **A negative result is a result.** "Not found" is written as searched-and-not-found, with what was searched;
-  never as absence.
-- **The corpus is the thing as it stands.** A measurement is taken against the code and the state as they are
-  now; records of earlier eras are a corpus only when the subject *is* the era — code that has been rewritten
-  since leaves noise that reads like evidence. Where only history exists, say so, and name the window it covers.
-- **The conclusion leaves, the review stays.** What entered the work is lifted into the project picture; the
-  review remains as the trace.
-- **A review that lies is worse than none.** Before work rests on a review, a fresh reader — not its author —
-  takes a sample of the addresses and checks them against the code.
-
-## Price
-
-A review costs one reading; a guess costs the rework that follows it, and a review that lies costs everything
-built on it.
+- **Every claim carries an address** — a file and a line, a command and its output, a number with the way it was taken — because the next reader checks rather than believes.
+- **A negative result is a result.** "Not found" is written as searched-and-not-found, with what was searched; never as absence.
+- **The corpus is the thing as it stands.** A measurement is taken against the code and the state as they are now; an earlier era is a corpus only when the subject *is* the era. Where only history exists, say so and name the window it covers.
+- **Quotations are verbatim**, in the language of the code; a translation is marked as a translation and never stands in place of the original.
+- **A review that lies is worse than none.** Before work rests on a review, a fresh reader — not its author — takes a sample of its addresses and checks them against the code.
