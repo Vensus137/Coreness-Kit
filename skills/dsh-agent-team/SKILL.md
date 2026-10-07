@@ -13,7 +13,7 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 
 **The mode is experimental,** like the platform packages it stands on: it is run by observation, and friction and benefit are named in the conversation.
 
-**Who and when.** For the lead — the one who talks to the user. The moment: the team bundle is on — an enabled mode is the user's request, and nothing further is asked for — and the work is bigger than one action.
+**Who and when.** For the lead — the one who talks to the user. The moment: the team bundle is on, and the work is bigger than one action.
 
 ## Handing work over
 
@@ -31,12 +31,12 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 - `spawn_teammate(name, description, prompt, context)` — a member; the brief is its `prompt`. `context: "fresh" | "fork"` — `fresh`, the default, starts without this conversation; `fork` inherits the completed turns of the lead.
 - `team_task_create` / `_get` / `_list` / `_update` — the board; `_update` carries the transition (`claim`, `release`, `edit`, `set_dependencies`, `complete`, `reopen`, `reassign`, `delete`) with the current `expected_revision`. A card carries the brief, the write zones and the acceptance criterion.
 - `send_message(target, message)` — mail; a member's report goes to `lead`. `list_agents` — the roster and who is running; `wait_agent` — the next team change (from ten seconds through one hour, thirty by default); `interrupt_agent` — stop a member's current turn.
-- **Write zones are advisory, not a lock:** an overlap with a card already claimed is warned about and never refused — keeping one zone to one writer is the lead's discipline, not the platform's.
+- **An overlap is warned about and never refused** (`warnings`): keeping one zone to one writer is the lead's discipline, not the platform's.
 
 ## The board
 
 - **A stale revision is refused** (`TEAM_TASK_STALE_REVISION`): take the fresh revision, see what changed, repeat. The check is there to notice someone else's change, not for protection.
-- **A card no longer needed leaves the board** (`delete`, by its owner or by the lead); only a card that still blocks another is refused (`TEAM_TASK_HAS_DEPENDENTS`). A tombstone stays in the log — out of the list, unaddressable — and, unlike the roster, it gives room back: it takes no `maxTasks`.
+- **A card no longer needed leaves the board** (`delete`, by its owner or by the lead); only a card that still blocks another is refused (`TEAM_TASK_HAS_DEPENDENTS`). A tombstone stays in the log — out of the list and out of the count, still readable by its id, and only a change to it is refused — and, unlike the roster, it gives room back: it takes no `maxTasks`.
 - **A cancelled card is closed by the lead with the reason in words:** interrupting a member is silent and leaves no record of why.
 - **Parallel cards get separate working copies** (`git worktree add`); in a shared tree a commit names its paths (`git commit -- <paths>`).
 
@@ -55,7 +55,7 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 
 ## Refusals
 
-Examples, not the whole list: `TEAM_TASK_STALE_REVISION`, `TEAM_TASK_ALREADY_CLAIMED`, `TEAM_TASK_BLOCKED`, `TEAM_TASK_UNAUTHORIZED` (a card is changed by its owner or by the lead), `TEAM_TASK_HAS_DEPENDENTS`, `TEAM_TASK_DELETED`, `TEAM_TASK_NOT_FOUND`, `TEAM_TASK_LIMIT`, `TEAM_LEAD_REQUIRED`, `TEAM_MEMBER_LIMIT`, `FS_STALE_VERSION`. A refusal is read and acted on, never muted: take the fresh state and repeat the step.
+Examples, not the whole list: `TEAM_TASK_STALE_REVISION`, `TEAM_TASK_ALREADY_CLAIMED`, `TEAM_TASK_BLOCKED`, `TEAM_TASK_UNAUTHORIZED` (a card is changed by its owner or by the lead), `TEAM_TASK_HAS_DEPENDENTS`, `TEAM_TASK_DELETED`, `TEAM_TASK_NOT_FOUND`, `TEAM_TASK_LIMIT`, `TEAM_LEAD_REQUIRED`, `TEAM_MEMBER_LIMIT`. A refusal is read and acted on, never muted: take the fresh state and repeat the step.
 
 ## Facts of this environment
 
