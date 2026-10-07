@@ -112,6 +112,7 @@ The documents of the project are read by an agent: a cold session must enter the
 - **Description speaks of the subject, not of its consumers.** It answers "what this is and what it means", not "who uses it and where".
 - **Lists are not exhaustive.** A full enumeration ages on the first change; an example suffices.
 - **A number lives where it is verified.** A number lives in an artifact checked by a command; other texts refer to it or speak in words. An unverified number lies silently.
+- **A paragraph is one line.** A break inside a sentence hides the phrase from a search, and nothing reads it otherwise; where such breaks already stand, they go as the document is touched.
 
 ## What is not done
 
@@ -136,4 +137,4 @@ the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.8 (2026-10-06)
+Version: 1.9 (2026-10-07)

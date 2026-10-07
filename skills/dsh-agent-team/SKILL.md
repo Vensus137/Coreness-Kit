@@ -1,6 +1,6 @@
 ---
 name: dsh-agent-team
-description: "Team mode in DeepSeek Harness: how the lead sets and accepts work when the team bundle is enabled — a task board, cards with write zones, mail to members, waiting — and stays in the conversation with the user while executors work. This environment only: it does not apply in an ordinary dialogue or in other environments. The skill is experimental — friction and benefit go into the conversation. English triggers: agent team, team mode, task board, teammates, delegate."
+description: "Team mode in DeepSeek Harness: how the lead sets and accepts work when the team bundle is enabled — a task board, cards with write zones, mail to members, waiting — and stays in the conversation with the user while executors work. The lead accepts on reports and does not stand in a wait: a report is a message that starts his next turn. A summary of a compacted session can quote an older copy of these rules — the file is the ground, and it is loaded again rather than retold. This environment only: it does not apply in an ordinary dialogue or in other environments. The skill is experimental — friction and benefit go into the conversation. English triggers: agent team, team mode, task board, teammates, delegate."
 ---
 
 # Team mode (DeepSeek Harness)
