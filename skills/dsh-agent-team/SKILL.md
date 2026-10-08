@@ -1,6 +1,6 @@
 ---
 name: dsh-agent-team
-description: "Team mode in DeepSeek Harness: the tools a lead drives here — spawn_teammate, send_message, wait_agent, list_agents, team_task_update, interrupt_agent — the card board and its revisions, the refusal codes, the roster ceiling, and what waiting means in this environment. English triggers: agent team, team mode, task board, teammates, delegate."
+description: "Team mode in DeepSeek Harness: the tools a lead drives here — spawn_teammate, send_message, wait_agent, list_agents, team_task_update, interrupt_agent — the card board and its revisions, the refusal codes, the roster ceiling, what waiting means in this environment, and how the lead stays in the conversation with the user while executors work. English triggers: agent team, team mode, task board, teammates, delegate."
 ---
 
 # Team mode in DeepSeek Harness
@@ -31,6 +31,8 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 
 ## Waiting and reporting
 
+**The lead stays in the conversation while the members work:** it clarifies, decides, sets the next thing and gives status — the user can talk to the lead at any moment rather than wait for the work to end.
+
 - Waiting wakes on any team change — a status, a task update, an incoming message — and only a message carries a report. `inactive` means no turn is executing, not a task result: a required member that is inactive without a report is woken by a message, not waited for, and `wait_agent` answers `noProgress` when nobody is running.
 - **Reporting is the executor's duty:** there is no separate "work finished" notice, and a report, being a message, starts the lead's next turn without anyone standing watch. Waiting is left for the case where the user's own answer is the report, and is named as what it is.
 
@@ -44,7 +46,7 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 
 ## Refusals
 
-Examples, not the whole list: `TEAM_TASK_STALE_REVISION`, `TEAM_TASK_ALREADY_CLAIMED`, `TEAM_TASK_BLOCKED`, `TEAM_TASK_UNAUTHORIZED` (a card is changed by its owner or by the lead), `TEAM_TASK_HAS_DEPENDENTS`, `TEAM_TASK_DELETED`, `TEAM_TASK_NOT_FOUND`, `TEAM_TASK_LIMIT`, `TEAM_LEAD_REQUIRED`, `TEAM_MEMBER_LIMIT`. A refusal is read and acted on, never muted: take the fresh state and repeat the step.
+Examples, not the whole list: `TEAM_TASK_STALE_REVISION`, `TEAM_TASK_ALREADY_CLAIMED`, `TEAM_TASK_BLOCKED`, `TEAM_TASK_UNAUTHORIZED` (a card is changed by its owner or by the lead), `TEAM_TASK_HAS_DEPENDENTS`, `TEAM_TASK_DELETED`, `TEAM_TASK_NOT_FOUND`, `TEAM_TASK_LIMIT`, `TEAM_LEAD_REQUIRED`, `TEAM_MEMBER_LIMIT`. A refusal is read and acted on, never muted: take the fresh state and repeat the step. An edit to a file changed since the last read is refused the same way: re-read, see what changed, repeat. The check, like the board's, is there to notice someone else's change.
 
 ## Facts of this environment
 

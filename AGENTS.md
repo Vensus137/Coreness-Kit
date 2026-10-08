@@ -136,6 +136,7 @@ In full force, like the main ones. Friction or benefit noticed — say it in the
 **Handing work over**
 
 - **A brief before the work:** the subject and where it lives, named as the executor will see it; the acceptance criterion with what confirms it; what the work stands on — in the brief or in a file it names.
+- **A brief for anything a reader will look at carries measured values.** The sizes, the fills, the separator, the rule behind a number — taken from the source of what is being copied before the code is written. An adjective ("like the host's", "as in the neighbouring screen") leaves nothing to draw from and nothing to check against, and settles only by a rework.
 - **One brief — one subject.** What is noticed nearby does not become a second task in the same brief: it goes back in words to whoever handed the work over.
 - **A subject returns to whoever did it** while that one is still there; when it is gone, the subject is rebuilt from the files left for it, not from memory.
 - **A milestone is named in the brief, and not fitting inside it means a report and a stop:** a silent long run is indistinguishable from a slow executor.
@@ -159,4 +160,4 @@ the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.14 (2026-10-08)
+Version: 1.15 (2026-10-08)
