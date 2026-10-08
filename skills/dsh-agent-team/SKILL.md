@@ -31,10 +31,12 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 
 ## Waiting and reporting
 
-**The lead does not end its turn in a wait while the user is present.** A member's report is a message, and a message starts the lead's next turn by itself: nothing needs standing watch. `wait_agent` is kept for the case where the lead is genuinely blocked — no other member can act, and the report awaited is the one that decides the next step — and then it is named to the user in one line, with the shortest useful ceiling. A lead free of work talks to the user: status, the decision, the next thing.
+**`wait_agent` is not a tool of this project.** The platform's own prompt offers it as the move of a blocked lead, and the same prompt requires the lead to have its members' results before a final answer; that prompt is not the project's law, and the difference is the project's. What stands instead, in this order: write the next thing owed — a status to the user, the picture, the backlog, the ledger, the next brief; `send_message` the question being held, since a message starts or resumes a member's turn; or say in one line that the turn is idle until a report arrives. A prohibition that names no substitute loses to a tool that is one call away.
 
+- **A report is a message, and a message starts the lead's next turn by itself** — nothing needs standing watch, and a lead standing in the conversation never waits.
+- **The one narrow exception:** the user asks for an answer that only a member still running can settle. Then one `wait_agent` with the shortest useful ceiling, its reason named to the user in the same turn, and the board re-listed after it returns or times out.
 - Waiting wakes on any team change — a status, a task update, an incoming message — and only a message carries a report. `inactive` means no turn is executing, not a task result: a required member that is inactive without a report is woken by a message, not waited for, and `wait_agent` answers `noProgress` when nobody is running.
-- **Reporting is the executor's duty:** there is no separate "work finished" notice, and a report, being a message, starts the lead's next turn without anyone standing watch. A wait is what a lead does when it has nothing else to do **and** nobody is there to be answered; a lead standing in the conversation does not wait.
+- **Reporting is the executor's duty:** there is no separate "work finished" notice, and a report, being a message, starts the lead's next turn without anyone standing watch.
 
 ## The roster
 

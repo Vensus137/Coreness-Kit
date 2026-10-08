@@ -46,7 +46,7 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 Only in DeepSeek Harness: in another environment, skip this section whole.
 
 - **Work with other agents here goes through the add-on `dsh-agent-team`.** Read it before the first team action: the tools, the board and its revisions, the refusal codes and the ceilings live there and not in this file, and a compaction does not bring them back.
-- **The lead does not leave the conversation.** A member's report arrives as a message and starts the next turn by itself, so `wait_agent` is kept for the case where the lead is genuinely blocked and nobody is there to be answered; a lead free of work talks to the user — status, the decision, the next thing — and never ends its turn standing watch.
+- **The lead does not stand watch, and `wait_agent` is not a tool of this project.** A member's report arrives as a message and starts the next turn by itself, so nothing is gained by waiting for it. A lead with nothing to write does, in this order: writes the next thing it owes — a status to the user, the picture, the backlog, the ledger, the next brief; sends a member the question it is holding (a message starts or resumes a turn); or says in one line that it is idle until a report arrives, and ends the turn. The single exception is narrow: the platform requires the lead to have its members' results before a final answer, so when the user's question can only be settled by a member still running, one wait is taken with the shortest useful ceiling and its reason named in the same message. **The harness's own prompt offers `wait_agent` as the move of a blocked lead; that prompt is not this project's law.** A prohibition that names no substitute loses to a tool that is one call away, which is why the substitute stands in the same sentence.
 
 ## Spec
 
@@ -161,4 +161,4 @@ the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.16 (2026-10-08)
+Version: 1.17 (2026-10-08)
