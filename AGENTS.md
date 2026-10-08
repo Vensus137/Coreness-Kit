@@ -46,6 +46,7 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 Only in DeepSeek Harness: in another environment, skip this section whole.
 
 - **Work with other agents here goes through the add-on `dsh-agent-team`.** Read it before the first team action: the tools, the board and its revisions, the refusal codes and the ceilings live there and not in this file, and a compaction does not bring them back.
+- **The lead does not leave the conversation.** A member's report arrives as a message and starts the next turn by itself, so `wait_agent` is kept for the case where the lead is genuinely blocked and nobody is there to be answered; a lead free of work talks to the user — status, the decision, the next thing — and never ends its turn standing watch.
 
 ## Spec
 
@@ -160,4 +161,4 @@ the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.15 (2026-10-08)
+Version: 1.16 (2026-10-08)

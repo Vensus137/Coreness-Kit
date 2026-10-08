@@ -1,6 +1,6 @@
 ---
 name: dsh-agent-team
-description: "Team mode in DeepSeek Harness: the tools a lead drives here — spawn_teammate, send_message, wait_agent, list_agents, team_task_update, interrupt_agent — the card board and its revisions, the refusal codes, the roster ceiling, what waiting means in this environment, and how the lead stays in the conversation with the user while executors work. English triggers: agent team, team mode, task board, teammates, delegate."
+description: "Team mode in DeepSeek Harness: the tools a lead drives here — spawn_teammate, send_message, wait_agent, list_agents, team_task_update, interrupt_agent — the card board and its revisions, the refusal codes, the roster ceiling, what waiting means in this environment, and that the lead does not end its turn in a wait while the user is present but talks to the user while executors work. English triggers: agent team, team mode, task board, teammates, delegate."
 ---
 
 # Team mode in DeepSeek Harness
@@ -31,10 +31,10 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 
 ## Waiting and reporting
 
-**The lead stays in the conversation while the members work:** it clarifies, decides, sets the next thing and gives status — the user can talk to the lead at any moment rather than wait for the work to end.
+**The lead does not end its turn in a wait while the user is present.** A member's report is a message, and a message starts the lead's next turn by itself: nothing needs standing watch. `wait_agent` is kept for the case where the lead is genuinely blocked — no other member can act, and the report awaited is the one that decides the next step — and then it is named to the user in one line, with the shortest useful ceiling. A lead free of work talks to the user: status, the decision, the next thing.
 
 - Waiting wakes on any team change — a status, a task update, an incoming message — and only a message carries a report. `inactive` means no turn is executing, not a task result: a required member that is inactive without a report is woken by a message, not waited for, and `wait_agent` answers `noProgress` when nobody is running.
-- **Reporting is the executor's duty:** there is no separate "work finished" notice, and a report, being a message, starts the lead's next turn without anyone standing watch. Waiting is left for the case where the user's own answer is the report, and is named as what it is.
+- **Reporting is the executor's duty:** there is no separate "work finished" notice, and a report, being a message, starts the lead's next turn without anyone standing watch. A wait is what a lead does when it has nothing else to do **and** nobody is there to be answered; a lead standing in the conversation does not wait.
 
 ## The roster
 
