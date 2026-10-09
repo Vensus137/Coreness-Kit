@@ -9,7 +9,7 @@ A pass over a project's scaffolding — the law, the procedures, the documents a
 
 **The shape below is a floor, not a script.** Where a subject needs a phase this file does not name, take it and say why. Both runs of this procedure so far found their sharpest findings *outside* the plan: a citation that resolved green over a sentence that had gone false, and a repair that exposed the very defect it repaired. A sweep that follows the letter and skips what it sees has failed the larger half of its job.
 
-**It is expensive, and it says so.** The first run behind this file used fourteen members and seven areas; the second is four areas in. Neither is a figure to copy. Use it on the scaffolding — never on a task. A task has a spec; a sweep has a subject.
+**It is expensive, and it says so.** The first run behind this file used fourteen members and seven areas. Neither is a figure to copy. Use it on the scaffolding — never on a task. A task has a spec; a sweep has a subject.
 
 ## 1. Zones first, before any work
 
@@ -23,9 +23,9 @@ Without this the sweep either stands still or oversteps. The runs behind this fi
 
 ## 2. The shape
 
-1. **Areas.** The scaffolding is divided into subjects, one reader each, one file each. A reader reads its subject whole — not from summaries, and not from the previous pass's prose.
+1. **Areas.** The scaffolding is divided into subjects, one reader each, one file each. A reader reads its subject whole — not from summaries, and not from the previous pass's prose. Experimental rules are read with special attention; if there are none, nothing is owed.
 2. **Proposals.** The same reader proposes for its own subject: it holds the material. A proposal that only describes is not a proposal.
-3. **One challenge round, and a second only if an objection moved a proposal's ground.** Three critics who are **not** the authors and who read from different angles: the law (does the proposal hold against the rules in force), what it breaks (the corpus, the citations, the neighbours), the evidence (does the evidence carry the claim). Each objection carries an address and the condition under which it survives.
+3. **One challenge round, and a second only if an objection moved a proposal's ground.** Three critics who read from different angles: the law (does the proposal hold against the rules in force), what it breaks (the corpus, the citations, the neighbours), the evidence (does the evidence carry the claim). Each objection carries an address and the condition under which it survives.
 4. **Answers.** One file per area, by its author: what was accepted and what changed, what was refused and the address that settles it. Numbers the critics checked and found **right** are recorded as confirmations — a critic that only subtracts is half a critic.
 5. **Patches.** Prepared diffs, one file, one writer. `git apply --check` reads and writes nothing; it is the floor of the check, never its ceiling: the applied result is replayed against the intent before it lands.
 6. **One landing, one hand.** A second writer in one tree is a race — settled in §1's zones, by write zones or by a copy per hand — and the lead lands where the tree is quiet.
@@ -62,7 +62,6 @@ Each of these is written from a failure, not from a preference.
 - **A promise of cheapness**, and a fixed roster: the areas are counted from the subject, not from a template.
 - **A second picture, a second backlog, a parallel index** that must be kept true by hand.
 - **One face of one thing** — a plugin, a module, a document — is `reflection`'s, and it changes nothing; a sweep takes the scaffolding as a class and ends in diffs.
-- **A rule that only adds.**
 - **Working without an owner**: a file whose keeper is unnamed will rot, and the rot will be found by the next sweep.
 
 ## 7. The end
