@@ -1,6 +1,6 @@
 ---
 name: reflection
-description: "Periodic reflection: the project and its scaffolding kept in tone — by traces, not by feelings. Looks for architecture drift, weak spots in design, redundant and repeated agent actions, conventions that are not followed or that get in the way. Modes: pulse — a quick pass after a series of tasks; review — a full one, periodically; either narrows to a subject — a module, a theme, a series of tasks. Started by the user on request («reflection», «audit», «pulse», «what can be improved»); a fitting moment is a reason to propose it, not to start it. The result is improvement points in the conversation. English triggers: reflection, audit, architecture review, pulse check, look for improvements."
+description: "Periodic reflection: the project and its scaffolding kept in tone — by traces, not by feelings. Looks for architecture drift, weak spots in design, redundant and repeated agent actions, conventions that are not followed or that get in the way. Started by the user on request («reflection», «audit», «pulse», «what can be improved»); a fitting moment is a reason to propose it, not to start it. English triggers: reflection, audit, architecture review, pulse check, look for improvements."
 ---
 
 # Reflection

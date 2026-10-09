@@ -1,6 +1,6 @@
 ---
 name: dsh-agent-team
-description: "Team mode in DeepSeek Harness: the tools a lead drives here — spawn_teammate, send_message, wait_agent, list_agents, team_task_update, interrupt_agent — the card board and its revisions, the refusal codes, the roster ceiling, what waiting means in this environment, and that `wait_agent` is not a tool of the project — the lead writes the next thing it owes, sends the question it is holding, or says in one line that the turn is idle until a report arrives. English triggers: agent team, team mode, task board, teammates, delegate."
+description: "Team mode in DeepSeek Harness: the card board and its revisions, the refusal codes, the roster ceiling, what waiting means in this environment, and that `wait_agent` is not a tool of the project — the lead writes the next thing it owes, sends the question it is holding, or says in one line that the turn is idle until a report arrives. English triggers: agent team, team mode, task board, teammates, delegate."
 ---
 
 # Team mode in DeepSeek Harness
@@ -17,27 +17,21 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 
 ## The lead's own hands
 
-- **The lead's own hand stops at its own zone.** The picture, the backlog, the commit and the acceptance are the lead's; so is a repair in one file that needs no tree read, no probe and no second file, when it unblocks the lead's own commit. Everything else is a card, however small it looks.
-- **A card closes with its numbers:** the lead reads what it cost on both sides — the member's record and its own — and names the steps of both in its report.
+- **Everything else is a card, however small it looks.** The picture, the backlog, the commit and the acceptance are the lead's; so is a repair in one file that needs no tree read, no probe and no second file, when it unblocks the lead's own commit.
 
 ## Tools
 
-- `spawn_teammate(name, description, prompt, context)` — a member; the brief is its `prompt`. `context: "fresh" | "fork"` — `fresh`, the default, starts without this conversation; `fork` inherits the completed turns of the lead.
-- `team_task_create` / `_get` / `_list` / `_update` — the board; `_update` carries the transition (`claim`, `release`, `edit`, `set_dependencies`, `complete`, `reopen`, `reassign`, `delete`) with the current `expected_revision`. A card carries the brief, the write zones and the acceptance criterion.
-- `send_message(target, message)` — mail; a member's report goes to `lead`. `list_agents` — the roster and who is running; `wait_agent` — the next team change (from ten seconds through one hour, thirty by default); `interrupt_agent` — stop a member's current turn.
-- **An overlap is warned about and never refused** (`warnings`): keeping one zone to one writer is the lead's discipline, not the platform's.
+- **The set.** `spawn_teammate(name, description, prompt, context)` — `context: "fresh"` (default) or `"fork"`; `send_message(target, message)`; `team_task_create` / `_get` / `_list` / `_update` (the transition, with the current `expected_revision`); `list_agents`; `wait_agent`; `interrupt_agent`. Their schemas arrive in every request; the discipline stands below.
 
 ## The board
 
 - **A stale revision is refused** (`TEAM_TASK_STALE_REVISION`): take the fresh revision, see what changed, repeat. The check is there to notice someone else's change, not for protection.
 - **A card no longer needed leaves the board** (`delete`, by its owner or by the lead); only a card that still blocks another is refused (`TEAM_TASK_HAS_DEPENDENTS`). A tombstone stays in the log — out of the list and out of the count, still readable by its id, and only a change to it is refused — and, unlike the roster, it gives room back: it takes no `maxTasks`.
 - **A cancelled card is closed by the lead with the reason in words:** interrupting a member is silent and leaves no record of why.
-- **Parallel cards get separate working copies** (`git worktree add`); in a shared tree a commit names its paths (`git commit -- <paths>`). **An executor does not commit — the lead commits by paths** — so a card's files reach history only through the lead, and that is also where its cost is read.
+- **Parallel cards get separate working copies** (`git worktree add`); in a shared tree a commit names its paths (`git commit -- <paths>`). **An executor does not commit — the lead commits by paths** — so a card's files reach history only through the lead, and that is also where its cost is read. **An overlap is warned about and never refused** (`warnings`): keeping one zone to one writer is the lead's discipline, not the platform's.
 
-## The brief, and what a card costs
+## What a card costs
 
-- **The brief carries the rules that bind the executor.** A rule standing only in a backlog, a picture or this file reaches nobody: a member is given no skill catalogue, so what the brief does not say is not in force. A fact the brief rests on thinly is named as thin, so it is probed first.
-- **A card's cost is its steps, and a step is one tool call.** The commands of one investigation go in one call; a predictable answer is not fetched; a check that changes no decision is not run.
 - **One reading, one tool:** a reader written for a card is designed before it is written, and prints every field the decision needs.
 
 ## Waiting and reporting
