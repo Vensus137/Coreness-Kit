@@ -29,7 +29,7 @@ A procedure is a folder `<name>/SKILL.md` or a flat file `<name>.md` at the top 
   disabled: false
 ```
 
-After one restart the roots work for every project of the profile. With the row on, a procedure loads by name from `<dsh home>/skills`; the catalogue still does not arrive — the pre-step returns early.
+After one restart the roots work for every project of the profile. With the row on, a procedure loads by name from `<dsh home>/skills`. The catalogue is the platform's own publication: it stays away while the pre-step returns the decision unchanged and nothing is logged, so whether it arrives today is measured rather than assumed.
 
 ## Procedures inside a package
 
@@ -42,7 +42,7 @@ The platform carries procedures of its own inside packages: a row points the pro
 
 ## The check
 
-Ask the session catalogue, or call the procedure by name: it is named, it loads, and its base directory points at the root it came from.
+Call the procedure by name: it is named, it loads, and its base directory points at the root it came from. A session's catalogue is the platform's to publish, not this provider's, so a name is the door that is always there.
 
 ## What not to do
 

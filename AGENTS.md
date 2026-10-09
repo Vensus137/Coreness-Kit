@@ -19,7 +19,7 @@ A session starts with the picture. No file — build it: the visible part comes 
 
 The picture is kept by whoever changed the project: a task is closed and something changed — update it in the same pass. There is one picture: no second picture file is started; parallel agents edit it along with the code, and git reconciles conflicts. When it stops being readable in one sitting, it is split, but the entry stays single.
 
-## How we work
+## How the work goes
 
 **Code after agreement.** Before implementation — a check of understanding: how the task is understood, what is proposed, where the doubts are.
 
@@ -39,13 +39,14 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 
 **Ritual into a tool.** A command sequence that repeats time and again is reduced to a single command: the tool keeps the order, not memory. Final checks of a task are the same ritual. A third one-off script on the same subject is a reason to make a command.
 
-**Commit and push are part of the work.** A finished and verified piece is committed at once, without "should I commit?": history provides the rollback. The message follows the style of the repository. Only the work of the task goes into the commit. Closing the task goes to the remote in the same pass, without a question — if a remote exists; a push may be held back for a named reason. Intermediate commits accumulate locally. A pull request and rewriting history — on an explicit request.
+**Commit and push are part of the work.** A finished and verified piece is committed at once, without "should I commit?": history provides the rollback. The message follows the style of the repository. Only the work of the task goes into the commit. Closing the task goes to the remote in the same pass, without a question — if a remote exists; a push may be held back for a named reason. Intermediate commits accumulate locally. A pull request and rewriting history — on an explicit request. The one who holds the task commits it; where a project separates the writer from the committer, the project names it.
 
 ## In DeepSeek Harness
 
 Only in DeepSeek Harness: in another environment, skip this section whole.
 
-- **Work with other agents here goes through the add-on `dsh-agent-team`.** Read it before the first team action: the tools, the board and its revisions, the refusal codes and the ceilings live there and not in this file, and a compaction does not bring them back.
+- **Work with other agents here goes through the add-on `dsh-agent-team`.** Read it before the first team action: the board and its revisions, the refusal codes and the ceilings live there and not in this file, and a compaction does not bring them back.
+- **A pass over a project's scaffolding goes through the procedure `dsh-sweep`** — loaded by name before the first area is cut; its subject and its shape are in it.
 - **The lead does not stand watch, and `wait_agent` is not a tool of this project.** A member's report arrives as a message and starts the next turn by itself, so nothing is gained by waiting for it. A lead with nothing to write does, in this order: writes the next thing it owes — a status to the user, the picture, the backlog, the ledger, the next brief; sends a member the question it is holding (a message starts or resumes a turn); or says in one line that it is idle until a report arrives, and ends the turn. The single exception is narrow: the platform requires the lead to have its members' results before a final answer, so when the user's question can only be settled by a member still running, one wait is taken with the shortest useful ceiling and its reason named in the same message. **The harness's own prompt offers `wait_agent` as the move of a blocked lead; that prompt is not this project's law.** A prohibition that names no substitute loses to a tool that is one call away, which is why the substitute stands in the same sentence.
 
 ## Spec
@@ -115,12 +116,13 @@ The documents of the project are read by an agent: a cold session must enter the
 
 - **One language per project.** Neighbouring documents set it; a new document is written in the same one. The snapshot of the kit is a document of the kit: its language does not set the project's.
 - **The text is impersonal.** "I", "we", "you" do not appear: the text speaks of its subject. "We decided" ages together with its authors; "it is decided" does not.
-- **One subject, one place.**
+- **One subject, one place, one line, one writer.**
 - **A document lives by being updated.** An artifact without an update loop ages and lies — worse than absence: such a file is not started. The memory of the project is PROJECT.md; contracts live in the code.
 - **Description speaks of the subject, not of its consumers.** It answers "what this is and what it means", not "who uses it and where".
 - **Lists are not exhaustive.** A full enumeration ages on the first change; an example suffices.
 - **A number lives where it is verified.** A number lives in an artifact checked by a command; other texts refer to it or speak in words. An unverified number lies silently.
 - **A paragraph is one line.** A break inside a sentence hides the phrase from a search, and nothing reads it otherwise; where such breaks already stand, they go as the document is touched.
+- **A document names its owner when the work that made it closes** — the name stands in the document or beside it; an ownerless document is handed on or, when nothing points at it, closed.
 
 ## What is not done
 
@@ -154,11 +156,8 @@ In full force, like the main ones. Friction or benefit noticed — say it in the
 
 Kit: https://github.com/Vensus137/Coreness-Kit.
 
-The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The file goes into the project,
-the skills into the user's home directory (for example `~/.dsh/skills`); where a project has its own place
-for the skills, that is the one used. A fresh kit is taken from the repository, not from a copy on disk;
-the file and the skills are updated together.
+The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The file goes into the project, the skills into the user's home directory (for example `~/.dsh/skills`); where a project has its own place for the skills, that is the one used. A fresh kit is taken from the repository, not from a copy on disk; the file and the skills are updated together.
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.17 (2026-10-08)
+Version: 1.18 (2026-10-08)
