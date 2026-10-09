@@ -1,6 +1,6 @@
 ---
 name: dsh-agent-team
-description: "Team mode in DeepSeek Harness: the tools a lead drives here — spawn_teammate, send_message, wait_agent, list_agents, team_task_update, interrupt_agent — the card board and its revisions, the refusal codes, the roster ceiling, what waiting means in this environment, and that the lead does not end its turn in a wait while the user is present but talks to the user while executors work. English triggers: agent team, team mode, task board, teammates, delegate."
+description: "Team mode in DeepSeek Harness: the tools a lead drives here — spawn_teammate, send_message, wait_agent, list_agents, team_task_update, interrupt_agent — the card board and its revisions, the refusal codes, the roster ceiling, what waiting means in this environment, and that `wait_agent` is not a tool of the project — the lead writes the next thing it owes, sends the question it is holding, or says in one line that the turn is idle until a report arrives. English triggers: agent team, team mode, task board, teammates, delegate."
 ---
 
 # Team mode in DeepSeek Harness
@@ -15,6 +15,11 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 
 **Who and when.** For the lead — the one who talks to the user. The moment: the team bundle is on, and the work is bigger than one action.
 
+## The lead's own hands
+
+- **The lead's own hand stops at its own zone.** The picture, the backlog, the commit and the acceptance are the lead's; so is a repair in one file that needs no tree read, no probe and no second file, when it unblocks the lead's own commit. Everything else is a card, however small it looks.
+- **A card closes with its numbers:** the lead reads what it cost on both sides — the member's record and its own — and names the steps of both in its report.
+
 ## Tools
 
 - `spawn_teammate(name, description, prompt, context)` — a member; the brief is its `prompt`. `context: "fresh" | "fork"` — `fresh`, the default, starts without this conversation; `fork` inherits the completed turns of the lead.
@@ -27,7 +32,13 @@ description: "Team mode in DeepSeek Harness: the tools a lead drives here — sp
 - **A stale revision is refused** (`TEAM_TASK_STALE_REVISION`): take the fresh revision, see what changed, repeat. The check is there to notice someone else's change, not for protection.
 - **A card no longer needed leaves the board** (`delete`, by its owner or by the lead); only a card that still blocks another is refused (`TEAM_TASK_HAS_DEPENDENTS`). A tombstone stays in the log — out of the list and out of the count, still readable by its id, and only a change to it is refused — and, unlike the roster, it gives room back: it takes no `maxTasks`.
 - **A cancelled card is closed by the lead with the reason in words:** interrupting a member is silent and leaves no record of why.
-- **Parallel cards get separate working copies** (`git worktree add`); in a shared tree a commit names its paths (`git commit -- <paths>`).
+- **Parallel cards get separate working copies** (`git worktree add`); in a shared tree a commit names its paths (`git commit -- <paths>`). **An executor does not commit — the lead commits by paths** — so a card's files reach history only through the lead, and that is also where its cost is read.
+
+## The brief, and what a card costs
+
+- **The brief carries the rules that bind the executor.** A rule standing only in a backlog, a picture or this file reaches nobody: a member is given no skill catalogue, so what the brief does not say is not in force. A fact the brief rests on thinly is named as thin, so it is probed first.
+- **A card's cost is its steps, and a step is one tool call.** The commands of one investigation go in one call; a predictable answer is not fetched; a check that changes no decision is not run.
+- **One reading, one tool:** a reader written for a card is designed before it is written, and prints every field the decision needs.
 
 ## Waiting and reporting
 
