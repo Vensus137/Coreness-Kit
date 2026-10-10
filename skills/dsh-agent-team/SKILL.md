@@ -34,7 +34,7 @@ description: "Team mode in DeepSeek Harness: the card board and its revisions, t
 ## What a card costs
 
 - **One reading, one tool:** a reader written for a card is designed before it is written, and prints every field the decision needs.
-- **A brief names a question, not a conclusion.** Subject, acceptance criterion, ground — and the question the work is not asking. A brief that hands over its own answer buys agreement, and agreement is not what a card is for.
+- **A brief names a question, not a conclusion.** Subject, acceptance criterion, ground — and the question the work is not asking. A brief that hands over its own answer buys agreement, and agreement is not what a card is for. The brief opens with the member's own name and the card it belongs to, so a compacted member re-reads its identity instead of asking the board.
 
 ## Waiting and reporting
 
@@ -57,7 +57,7 @@ description: "Team mode in DeepSeek Harness: the card board and its revisions, t
 
 ## Refusals
 
-Examples, not the whole list: `TEAM_TASK_STALE_REVISION`, `TEAM_TASK_ALREADY_CLAIMED`, `TEAM_TASK_BLOCKED`, `TEAM_TASK_UNAUTHORIZED` (a card is changed by its owner or by the lead), `TEAM_TASK_HAS_DEPENDENTS`, `TEAM_TASK_DELETED`, `TEAM_TASK_NOT_FOUND`, `TEAM_TASK_LIMIT`, `TEAM_LEAD_REQUIRED`, `TEAM_MEMBER_LIMIT`. A refusal is read and acted on, never muted: take the fresh state and repeat the step. An edit to a file changed since the last read is refused the same way: re-read, see what changed, repeat. The check, like the board's, is there to notice someone else's change.
+Examples, not the whole list: `TEAM_TASK_STALE_REVISION`, `TEAM_TASK_ALREADY_CLAIMED`, `TEAM_TASK_BLOCKED`, `TEAM_TASK_UNAUTHORIZED` (a card is changed by its owner or by the lead), `TEAM_TASK_HAS_DEPENDENTS`, `TEAM_TASK_DELETED`, `TEAM_TASK_NOT_FOUND`, `TEAM_TASK_LIMIT`, `TEAM_LEAD_REQUIRED`, `TEAM_MEMBER_LIMIT`. A refusal is read and acted on, never muted: take the fresh state and repeat the step. An edit to a file changed since the last read is refused the same way: re-read, see what changed, repeat. The check, like the board's, is there to notice someone else's change. **A stale refusal carries no writer:** the hand that receives it names the writer from the board's own cards and their write scopes before repeating, and where that names nobody, repeat.
 
 ## Facts of this environment
 
