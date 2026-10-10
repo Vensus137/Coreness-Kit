@@ -127,7 +127,7 @@ The documents of the project are read by an agent: a cold session must enter the
 - **One language per project.** Neighbouring documents set it; a new document is written in the same one. The snapshot of the kit is a document of the kit: its language does not set the project's.
 - **The text is impersonal.** "I", "we", "you" do not appear: the text speaks of its subject. "We decided" ages together with its authors; "it is decided" does not.
 - **One subject, one place, one line, one writer.**
-- **A document lives by being updated.** An artifact without an update loop ages and lies — worse than absence: such a file is not started. The memory of the project is PROJECT.md; contracts live in the code.
+- **Nothing that ages is kept.** What ages cannot be kept true, and a kept thing that is not true is worse than its absence: a log, an archive, a chronicle, a report, a copy of a number or of a state, a trace of history — "it used to be so", a commented-out block, "temporarily". History is git, and git is enough: what is done stays there, and the diff carries it. Work in flight is `tmp/`. A document lives only while something updates it, and one without an update loop is not started; the memory of the project is PROJECT.md, and contracts live in the code.
 - **Description speaks of the subject, not of its consumers.** It answers "what this is and what it means", not "who uses it and where".
 - **Lists are not exhaustive.** A full enumeration ages on the first change; an example suffices.
 - **A number lives where it is verified.** A number lives in an artifact checked by a command; other texts speak of it in words. An unverified number lies silently. A number whose artifact was a reading has no home left when the reading goes: it moves into the picture or into the code, or it is not written.
@@ -139,7 +139,6 @@ The documents of the project are read by an agent: a cold session must enter the
 ## What is not done
 
 - **Temporary only in `tmp/` and in its own folder.** Drafts, runs and experiments live in `tmp/<slug>/` — one work, one folder: a task, a session or an experiment; the name says what is inside. Cleanup comes down to deleting the folder; nothing temporary stays in the code; `tmp/` is in `.gitignore` (not there — add it).
-- **Traces of history.** "It used to be so", commented-out blocks, "temporarily". History lives in git.
 - **Prose in the code.** A comment or a docstring is the non-derivable "why", an invariant or a boundary of a decision, not a retelling of the code. Test: delete the phrase — would the next session make a wrong decision? No — the phrase is extra.
 - **No address in the code.** A comment names no document, no path and no line, not even in passing: code carries the facts of its own place — an invariant, a boundary, the price of a decision — and never a pointer to where something is written down. A comment that says where to read instead of what holds is a defect, and a check may fail the run on one.
 
@@ -171,4 +170,4 @@ The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The f
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.20 (2026-10-10)
+Version: 1.21 (2026-10-10)
