@@ -13,9 +13,9 @@ The result is improvement points: what to fix and by which trace, or an honest "
 
 - **Pulse** — a quick pass after a series of tasks: whether something slipped. Consistency, hygiene, adherence to conventions — without diving deep.
 - **Review** — a full one: architecture, quality, process, scaffolding. More expensive; runs periodically or after a trace found by a pulse.
-- **Subject** — either mode narrows: "on the plugin", "on the upload module", "after the gate tasks". Do not spread beyond the subject; something heavy noticed on the way goes as a separate item, without unwinding.
+- **Subject** — either mode narrows: "on the plugin", "on the upload module", "after the gate tasks". Do not spread beyond the subject; something noticed on the way goes as a separate item, without unwinding.
 
-A mode not named — choose by the size of the request: "run through it" — a pulse, "audit", "reflection" — a review; in doubt — ask.
+A mode not named — choose by the subject the request names, not by a measure of it: "run through it" — a pulse; "audit", "reflection" — a review; in doubt — ask.
 
 ## By traces, not by feelings
 
@@ -49,7 +49,7 @@ A short pass, minutes:
 
 A pass answers the question it was given, and that is its blind spot: a clean answer to the wrong question reads as success. So the question is opened before the material — what is being asked, **and which question is not being asked**, the one whose answer would make the whole pass unnecessary. The asking side's own framing is material too: it is named in words, and where it presupposes a thing (that a guard must exist, that a document must be kept, that a number must be improved), the presupposition is named with it.
 
-The outcome is stated as an answer to that question; what the question left out is named as what it left out. A pass that finds the frame wrong says so and stops, rather than answering well inside it. The default direction of an improvement point is **subtraction** — what can go — and a proposal that only adds is refused unless it removes more than it adds.
+The outcome is stated as an answer to that question; what the question left out is named as what it left out. A pass that finds the frame wrong says so and stops, rather than answering well inside it. The default direction of an improvement point is **subtraction** — what can go — and a proposal that only adds is refused.
 
 ## Result
 

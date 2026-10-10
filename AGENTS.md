@@ -17,7 +17,7 @@ The picture is not a log: no dates, no "what was done", no chronicles or progres
 
 A session starts with the picture. No file — build it: the visible part comes from code, configs and git history; questions are asked only about the unknowable, in a batch. When the file and the facts diverge, the fact wins and the file is brought to it in the same pass.
 
-The picture is kept by whoever changed the project: a task is closed and something changed — update it in the same pass. There is one picture: no second picture file is started; parallel agents edit it along with the code, and git reconciles conflicts. When it stops being readable in one sitting, it is split, but the entry stays single. A split is an entry that names every part, each part one hop away and self-sufficient; the condition is met where a reader cannot receive the whole, and the act is the split. A document does not require a line longer than its reader can receive: the platform's read tool reports what it truncates and the instruction loader what it drops, and the limit is read from the tool that reports it.
+The picture is kept by whoever changed the project: a task is closed and something changed — update it in the same pass. There is one picture: no second picture file is started; parallel agents edit it along with the code, and git reconciles conflicts. When it stops being readable in one sitting, it is split, but the entry stays single. A split is an entry that names every part, each part one hop away and self-sufficient; the condition is met where a reader cannot receive the whole, and the act is the split. A document does not require a line longer than its reader can receive: the platform's read tool reports what it truncates and the instruction loader what it drops, and the limit is read from the tool that reports it and chosen by no tree.
 
 ## How the work goes
 
@@ -33,9 +33,9 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 
 - **A dead end is a report, not a siege.** Signs of a dead end: the solution does not stand on the facts — it cannot be implemented, the inputs diverged, it went wrong; or several different approaches gave no progress. Once the dead end is recognised, the search stops: a short report goes up — where it stopped, what was tried, what is proposed; the addressee is the task setter, and under delegation the lead agent. The reverse boundary: the rule is about a dead end, not about the first difficulty; the executor makes reasonable attempts before reporting.
 
-**A retelling is not a reading.** A rule, a path, a number or a mechanism the work will stand on is taken from its source at the moment it becomes load-bearing; a summary, a review's own words or the memory of the one who read it is a prompt to open the source, not a substitute for it.
+**A retelling is not a reading.** A rule, a path, a number or a mechanism the work will stand on is taken from its source at the moment it becomes load-bearing; a summary, a review's own words or the memory of the one who read it is a prompt to open the source, not a substitute for it — **only a text of the work is a rule or a record.** A rule of the work is what the law states and a record is what the work's own texts carry; what stands outside them — a mechanism's shape, a hand's memory — governs nothing and carries nothing.
 
-**Checks by the size of the change.** The mapping "type of change → set of checks" lives in the project and is not chosen anew for every change; the full set is for changes that touched logic. Edits of texts and data are checked pointwise. A move or a rename is not a text edit: anything that depends on location is checked by a run. A check is written so that what is legitimate does not fall under it; a legitimate hit is named in the report and the check is corrected — the text is not edited to satisfy it. **A check is written for what the work produces, not for how the work is written:** the wording of a text, the shape of a comment, a stale number, a reference — a class of drift — is found by **reading**, when the work touches that class and again at the close, and no standing check is written for it. A reading kept for such a class is a finder, run on demand: it reports, and it does not fail a run.
+**Checks by the size of the change.** The mapping "type of change → set of checks" lives in the project and is not chosen anew for every change; the full set is for changes that touched logic. Edits of texts and data are checked pointwise. A move or a rename is not a text edit: anything that depends on location is checked by a run. A check is written so that what is legitimate does not fall under it; a legitimate hit is named in the report and the check is corrected — the text is not edited to satisfy it. A check holds the state the sentence beside it claims, not a spelling of that state. **A check is written for what the work produces, not for how the work is written:** the wording of a text, the shape of a comment, a stale number, a reference — a class of drift — is found by **reading**, when the work touches that class and again at the close, and no standing check is written for it. A reading kept for such a class is a finder, run on demand: it reports, and it does not fail a run.
 
 **Agent steps are the main cost.** Related edits go in one pass; independent checks run in parallel and are designed as such; intermediate runs between small edits are not repeated. Large outputs live on disk — extracts come into the conversation.
 
@@ -59,7 +59,7 @@ A spec is the contract of one task: SPEC.md in the root, living exactly for the 
 
 A spec matches the size of the task: a large one (a rework or new logic, several modules, new entities, data, integrations, a change of someone else's behaviour) — with a spec; a local edit and an unambiguous trifle — without: an agreed paragraph suffices. Doubt about the size goes to the questions.
 
-Implementation only by an approved spec; the status in the header moves together with the fact. It is committed together with the task; after acceptance the project part moves into PROJECT.md and the file is deleted; for an abandoned task the file is deleted at once.
+Implementation only by an approved spec; the status in the header moves together with the fact. It is committed together with the task; after acceptance the project part moves into PROJECT.md and the file is deleted in the commit that carries the move, which closes the task; for an abandoned task the file is deleted at once.
 
 The frame has two parts.
 
@@ -94,7 +94,7 @@ Technical conventions of the project live in PROJECT.md: stack, storage, pattern
 
 They hold on any stack. A violation is a defect, not a "style": it is fixed, not worked around.
 
-**Do not mute, do not substitute.** If it does not work, that is visible: the error goes outward — a log, a status. No "just in case" fallbacks and no stubs instead of a result: better to fall than to work wrongly in silence. Silent degradation turns an explicit failure into a hidden bug. The check stands where the entity appears, not where it leaves: a guard at the exit mutes an already assembled defect.
+**Do not mute, do not substitute.** If it does not work, that is visible: the error goes outward — a log, a status. No "just in case" fallbacks and no stubs instead of a result: better to fall than to work wrongly in silence. Silent degradation turns an explicit failure into a hidden bug. The check stands where the entity appears, not where it leaves: a guard at the exit mutes an already assembled defect. The same holds for the instruments of the work: an instrument that cannot reach its subject says so in its own words and falls rather than leaving a green it did not earn, and a step does not wait out a ceiling for a thing the drawing does not carry.
 
 **Debug by a run, not by an edit.** A hypothesis is checked by a reproducible run — in a transaction with a rollback or on a copy of the data — and not by a one-off edit of live state: a run is repeatable, live data stays intact.
 
@@ -112,7 +112,7 @@ They hold on any stack. A violation is a defect, not a "style": it is fixed, not
 
 **Derived in the same change.** A generated artifact is rebuilt by the same change as its source: the content of the generation is part of the diff, not a separate ritual.
 
-**Simple before complex.** A solution starts simple; if it grows complex, that is a signal to stop and find where to simplify or split instead of piling up. Technique — dependencies, caches, extra layers — comes on proven need.
+**Simple before complex.** A solution starts simple; if it grows complex, that is a signal to stop and find where to simplify or split instead of piling up. Technique — dependencies, caches, extra layers — comes on proven need. A change is counted by what it removes: a sentence that leaves, a class of defect that stops being possible, an action that stops being spent. What it removes is read in the session that comes next: a cold session enters the work quickly and is not mistaken.
 
 **Tests by risk, not by ritual.** A test goes where an error is expensive and a regular run cannot see it: complex pure logic, rare edges. Glue and the obvious are checked by a run. Tests do not multiply: each must answer a question that would otherwise stay blind; a test is a check of behaviour, not a number.
 
@@ -170,4 +170,4 @@ The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The f
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.24 (2026-10-10)
+Version: 1.25 (2026-10-11)

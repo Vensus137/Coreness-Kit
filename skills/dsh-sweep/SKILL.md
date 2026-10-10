@@ -9,7 +9,7 @@ A pass over a project's scaffolding — the law, the procedures, the documents a
 
 **The shape below is a floor, not a script.** Where a subject needs a phase this file does not name, take it and say why. Both runs of this procedure so far found their sharpest findings *outside* the plan: a citation that resolved green over a sentence that had gone false, and a repair that exposed the very defect it repaired. A sweep that follows the letter and skips what it sees has failed the larger half of its job.
 
-**It is expensive, and it says so.** The first run behind this file used fourteen members and seven areas. Neither is a figure to copy. Use it on the scaffolding — never on a task. A task has a spec; a sweep has a subject.
+**It is expensive, and it says so.** The run behind this file is the evidence and not a shape to copy. Use it on the scaffolding — never on a task. A task has a spec; a sweep has a subject.
 
 ## 1. Zones first, before any work
 
@@ -34,14 +34,14 @@ Without this the sweep either stands still or oversteps. The runs behind this fi
 ## 3. The members, and what each owes
 
 - **One reader per area.** It reads its subject, writes its area file, then its proposal. It does not write another area's file, ever.
-- **Three critics, never authors** of what they judge. Majority decides what survives; **a refusal escalates to the user and is not the truth.** The sweep reduces uncertainty; it does not own it.
+- **Three critics, never authors** of what they judge. Majority decides what survives; **a refusal escalates to the user and is not the truth.** The sweep reduces uncertainty; it does not own it. **Every proposal is asked the cause it answers:** where the defect is produced and what other case the change catches — a cause that names no place of production, or no other case it catches, is refused the way an empty removal is.
 - **The lead writes no area of its own**; when an owner is gone it repairs what that owner can no longer correct and names the repair (§5).
 - **A card is a document like any other**, checked against the specification it summarises; the executor sees the gap.
 
 ## 4. What an artifact carries
 
-- **A finding**: `claim / kind / trace / cost / proposal`. Every trace opens the source at the moment it becomes load-bearing. **A retelling is not a reading**, and a summary is a prompt to open the file, never a substitute for it.
-- **A proposal**: what changes, in which file, **what it removes**, its price, what breaks if it is wrong, what it does not do, and which alternatives lost and why. A proposal whose "what it removes" is empty is a rule that only adds — refuse it.
+- **A finding**: `claim / kind / trace / cost / proposal` — the claim being what the finding asserts and can be held to, the kind being the thing the claim is about (a rule, a path, a number, a mechanism), the trace being the finding's source — a commit, a file, an output — named where it stands, the cost being the work the defect spends today.
+- **A proposal**: what changes, in which file, **what it removes**, **its price** — the work it costs to make and to keep — **the cause it answers** — where the defect is produced and the other case the change catches — what breaks if it is wrong, what it does not do, and which alternatives lost and why. A proposal whose "what it removes" is empty is a rule that only adds — refuse it.
 
 ## 5. The rules that cost the most
 

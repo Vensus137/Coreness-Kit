@@ -34,7 +34,7 @@ description: "Team mode in DeepSeek Harness: the card board and its revisions, t
 ## What a card costs
 
 - **One reading, one tool:** a reader written for a card is designed before it is written, and prints every field the decision needs.
-- **A brief names a question, not a conclusion.** Subject, acceptance criterion, ground — and the question the work is not asking. A brief that hands over its own answer buys agreement, and agreement is not what a card is for. The brief opens with the member's own name and the card it belongs to, so a compacted member re-reads its identity instead of asking the board.
+- **A brief names a question, not a conclusion.** Subject, acceptance criterion, ground — and the question the work is not asking. A brief that hands over its own answer buys agreement, and agreement is not what a card is for. The brief opens with the member's own name and the card it belongs to, so a compacted member re-reads its identity instead of asking the board; what the work needs again stands in the brief or in the card and is not left to the compaction.
 
 ## Waiting and reporting
 
@@ -51,7 +51,7 @@ description: "Team mode in DeepSeek Harness: the card board and its revisions, t
 
 - **A card goes to the member holding its subject; a fresh member earns its entry only where none can take it without judging its own work.**
 - **No place comes back:** every creation counts for the life of the session, failed ones too, and the name is spent with it. The next is refused with `TEAM_MEMBER_LIMIT` ("Team member limit <n> reached").
-- **The ceiling** is `maxMembers` in the team row's `config` — sixteen in the platform's code, and in an environment whatever its profile's patch declares. It is raised from that patch by an `id`-targeted entry that restates the **whole** `config`, since it is replaced and not merged (`maxMembers`, `maxTasks`, `maxPendingMessagesPerMember`, `maxMessageBytes`, `disposalTimeoutMs`); a restart applies it.
+- **The ceiling** is `maxMembers` in the team row's `config` — the platform's own figure there, and in an environment whatever its profile's patch declares. It is raised from that patch by an `id`-targeted entry that restates the **whole** `config`, since it is replaced and not merged (`maxMembers`, `maxTasks`, `maxPendingMessagesPerMember`, `maxMessageBytes`, `disposalTimeoutMs`); a restart applies it.
 - A member that has exhausted its context is not revived: its subject moves to another member, and everything found on the way stays on disk for whoever takes the subject up.
 - A spent roster and a changed subject are the two reasons to start a new session: a new session begins with an empty roster and an empty board, and nothing migrates between sessions.
 
