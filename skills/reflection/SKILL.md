@@ -63,7 +63,3 @@ Findings about conventions are named separately so that they do not drown among 
 - The user starts it; the agent may propose a moment — a series of tasks is closed, a review has not run for long — but does not start it.
 - A change that reaches the whole scaffolding — the law, the procedures, the documents as a class — is a sweep, `dsh-sweep`, not a reflection.
 - A report for the sake of a report is not assembled: reflection is about improvement points, not about a document.
-
-## The update loop
-
-A run names what this shape made easy and what it cost, and corrects this file in the same commit as the law it serves.

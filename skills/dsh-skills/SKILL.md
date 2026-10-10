@@ -48,7 +48,3 @@ Call the procedure by name: it is named, it loads, and its base directory points
 
 - Do not assume a file has arrived without asking the catalogue: a file in a root that is not scanned is a silent substitution.
 - Do not keep the same procedure in two doors at once: the text gets one owner.
-
-## The update loop
-
-A run names what this shape made easy and what it cost, and corrects this file in the same commit as the law it serves.

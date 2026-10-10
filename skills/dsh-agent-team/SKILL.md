@@ -64,7 +64,3 @@ Examples, not the whole list: `TEAM_TASK_STALE_REVISION`, `TEAM_TASK_ALREADY_CLA
 Observations about the harness, kept as reference rather than as rules: no check enforces them, and they age with the platform.
 
 - **A member's road is its own.** A selection belongs to a session, and the default row only starts fresh ones: a member is created on whatever provider and model the session stands on at that moment and keeps them for its life. Work that must ride a new road needs a member created after the switch.
-
-## The update loop
-
-A run names what this shape made easy and what it cost, and corrects this file in the same commit as the law it serves.
