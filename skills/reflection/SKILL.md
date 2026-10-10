@@ -47,7 +47,7 @@ A short pass, minutes:
 
 ## Result
 
-The outcome goes into the conversation, briefly: improvement points — the subject, the essence, the trace. Findings go to execution: reflection names only what is verified as an improvement, therefore "can wait" does not exist — a fix through an agent is cheap, a postponement is more expensive. The user's word is the one hold it knows: what he puts off is written down with its reason. Doubt that something is an improvement — not a finding: drop it or ask. What the reflection itself got wrong, or could not check, is named with it; a finding is read by someone who did not write it, and where the work allows no second reader, the report says so. "Clean" is an outcome too: name what was checked against. No file is started: an extract asked for while the work runs goes into `tmp/<slug>/`, and a reading the user asks to keep stands where the project keeps its readings, not in `tmp/`.
+The outcome goes into the conversation, briefly: improvement points — the subject, the essence, the trace. Findings go to execution: reflection names only what is verified as an improvement, therefore "can wait" does not exist — a fix through an agent is cheap, a postponement is more expensive. The user's word is the one hold it knows: what he puts off is written down with its reason. Doubt that something is an improvement — not a finding: drop it or ask. What the reflection itself got wrong, or could not check, is named with it; a finding is read by someone who did not write it, and where the work allows no second reader, the report says so. "Clean" is an outcome too: name what was checked against. No file is started: an extract asked for while the work runs goes into `tmp/<slug>/`, and what survives a reflection is its conclusion — lifted into the picture or into the code — not a file.
 
 Findings about conventions are named separately so that they do not drown among project ones: this is the shared layer, and a fix acts in every project.
 
@@ -57,3 +57,7 @@ Findings about conventions are named separately so that they do not drown among 
 - The user starts it; the agent may propose a moment — a series of tasks is closed, a review has not run for long — but does not start it.
 - A change that reaches the whole scaffolding — the law, the procedures, the documents as a class — is a sweep, `dsh-sweep`, not a reflection.
 - A report for the sake of a report is not assembled: reflection is about improvement points, not about a document.
+
+## The update loop
+
+A run names what this shape made easy and what it cost, and corrects this file in the same commit as the law it serves.

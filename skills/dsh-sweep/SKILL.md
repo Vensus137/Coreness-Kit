@@ -66,4 +66,8 @@ Each of these is written from a failure, not from a preference.
 
 ## 7. The end
 
-The sweep ends with what the areas produced: **prepared diffs** in the pass's own folder where they were asked for, **the user's decisions** listed apart from the decided ones, and **the record** — the ledger, with its corrections section, handed back with the result. The landing is a separate act, inside the zones the first question fixed. What was not settled is named as not settled; a finding that could not be pinned is more useful as an open question than as a confident sentence.
+The sweep ends with what the areas produced: **prepared diffs** in the pass's own folder where they were asked for, **the user's decisions** listed apart from the decided ones, and **the record** — the ledger, with its corrections section, handed back with the result. The ledger lives in `tmp/`; what outlives the pass is what a sanctioned document carries. The landing is a separate act, inside the zones the first question fixed. What was not settled is named as not settled; a finding that could not be pinned is more useful as an open question than as a confident sentence.
+
+## The update loop
+
+A run names what this shape made easy and what it cost, and corrects this file in the same commit as the law it serves.

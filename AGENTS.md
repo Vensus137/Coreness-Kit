@@ -29,7 +29,7 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 
 **Challenge is the norm.** Words are not taken as truth: verify, doubt, name the weak spots — in the decisions of the user and of the agent alike. Agreement out of politeness is a loss. The goal of the argument is truth, not agreement.
 
-**Report by evidence.** A handover names: what was done; what confirms it — a command and its output, not "it works"; what the check did not show; where the work stopped if unfinished. The same holds for written texts: "works", "faster", "safe" are not written without a command, a measurement or a reference. Success is claimed after observation, not instead of it.
+**Report by evidence.** A handover names: what was done; what confirms it — a command and its output, not "it works"; what the check did not show; where the work stopped if unfinished. The same holds for written texts: "works", "faster", "safe" are not written without a command, a measurement or a reference. Success is claimed after observation, not instead of it. A claim read off a tree another hand is writing names the revision and the state it was read at, because the same read taken twice inside a quarter of an hour gives two answers, and both are true. A reading that touches a live environment names what the environment gave it — an identifier the other side generates per call, a count of another program's own furniture — or says in its own words that the two cannot be told apart.
 
 - **A dead end is a report, not a siege.** Signs of a dead end: the solution does not stand on the facts — it cannot be implemented, the inputs diverged, it went wrong; or several different approaches gave no progress. Once the dead end is recognised, the search stops: a short report goes up — where it stopped, what was tried, what is proposed; the addressee is the task setter, and under delegation the lead agent. The reverse boundary: the rule is about a dead end, not about the first difficulty; the executor makes reasonable attempts before reporting.
 
@@ -41,7 +41,9 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 
 **Ritual into a tool.** A command sequence that repeats time and again is reduced to a single command: the tool keeps the order, not memory. Final checks of a task are the same ritual. A third one-off script on the same subject is a reason to make a command.
 
-**Commit and push are part of the work.** A finished and verified piece is committed at once, without "should I commit?": history provides the rollback. The message follows the style of the repository. Only the work of the task goes into the commit. Closing the task goes to the remote in the same pass, without a question — if a remote exists; a push may be held back for a named reason. Intermediate commits accumulate locally. A pull request and rewriting history — on an explicit request. The one who holds the task commits it; where a project separates the writer from the committer, the project names it.
+**Commit and push are part of the work.** A finished and verified piece is committed at once, without "should I commit?": history provides the rollback. The message follows the style of the repository. Only the work of the task goes into the commit. Closing the task goes to the remote in the same pass, without a question — if a remote exists; a push may be held back for a named reason, named where the work is reported and standing in the backlog while it holds, so that an unpushed commit is not read as a forgotten one. Intermediate commits accumulate locally. A pull request and rewriting history — on an explicit request. The one who holds the task commits it; where a project separates the writer from the committer, the project names it.
+
+**A commit carries what it stands on.** An artifact the message names is in the commit, or the message states the ground itself: `tmp/` is not carried, and a ledger there is gone by the time the message is read.
 
 ## In DeepSeek Harness
 
@@ -96,6 +98,12 @@ They hold on any stack. A violation is a defect, not a "style": it is fixed, not
 
 **Debug by a run, not by an edit.** A hypothesis is checked by a reproducible run — in a transaction with a rollback or on a copy of the data — and not by a one-off edit of live state: a run is repeatable, live data stays intact.
 
+**One instrument per comparison.** A before-and-after pair is valid only when one instrument took both sides; a tool changed between them makes the pair a reading about the tool, and a comparison whose instrument is unknown is not taken.
+
+**A plant proves reach.** A plant that silently fails to land is worse than none — its clean result is read as proof of a change it never touched. What is refused is the proof by absence: "nothing moved, therefore the change is safe" is not a proof.
+
+**A plant lives in the run's own copy.** Where the artifact under test is copied before it is served, the plant goes into the copy, between the copy and the boot: no shared tree is frozen, no other run can see it, and a plant that does not land is refused and named.
+
 ## Form
 
 **Explicit joints.** A module talks to its neighbour through an explicit entry — a function, an interface — and does not dig into its internals; the form of the joint is a question of the task.
@@ -122,15 +130,18 @@ The documents of the project are read by an agent: a cold session must enter the
 - **A document lives by being updated.** An artifact without an update loop ages and lies — worse than absence: such a file is not started. The memory of the project is PROJECT.md; contracts live in the code.
 - **Description speaks of the subject, not of its consumers.** It answers "what this is and what it means", not "who uses it and where".
 - **Lists are not exhaustive.** A full enumeration ages on the first change; an example suffices.
-- **A number lives where it is verified.** A number lives in an artifact checked by a command; other texts refer to it or speak in words. An unverified number lies silently.
+- **A number lives where it is verified.** A number lives in an artifact checked by a command; other texts speak of it in words. An unverified number lies silently. A number whose artifact was a reading has no home left when the reading goes: it moves into the picture or into the code, or it is not written.
 - **A paragraph is one line.** A break inside a sentence hides the phrase from a search, and nothing reads it otherwise; where such breaks already stand, they go as the document is touched.
-- **A document names its owner when the work that made it closes** — the name stands in the document or beside it; an ownerless document is handed on or, when nothing points at it, closed.
+- **Documents are not started.** The project keeps the picture, the backlog, a spec for the duration of its task and a README where one exists; the kit keeps this file, its procedures and its own README. Everything else a session learns lives in `tmp/` and is dissolved there, and what survives is the conclusion — lifted into the picture or into the code, where the knowledge is fixed. A document says what it is, why it exists and why it stays; one that cannot answer this is worth neither its place nor the reading. A document the user asks for is an exception and is named as his request.
+- **No references.** A document speaks of its subject, not of where a foreign thing lies: a reader is not sent elsewhere to understand what stands here. A place of the work's own may be named — the work's own place is knowledge a reader may be given — but no reader is required to walk to it. A reference is an exception named in the report, not a style.
+- **A document names its owner when the work that made it closes** — the name stands in the document or beside it; an ownerless document is handed on.
 
 ## What is not done
 
 - **Temporary only in `tmp/` and in its own folder.** Drafts, runs and experiments live in `tmp/<slug>/` — one work, one folder: a task, a session or an experiment; the name says what is inside. Cleanup comes down to deleting the folder; nothing temporary stays in the code; `tmp/` is in `.gitignore` (not there — add it).
 - **Traces of history.** "It used to be so", commented-out blocks, "temporarily". History lives in git.
 - **Prose in the code.** A comment or a docstring is the non-derivable "why", an invariant or a boundary of a decision, not a retelling of the code. Test: delete the phrase — would the next session make a wrong decision? No — the phrase is extra.
+- **No address in the code.** A comment names no document, no path and no line, not even in passing: code carries the facts of its own place — an invariant, a boundary, the price of a decision — and never a pointer to where something is written down. A comment that says where to read instead of what holds is a defect, and a check may fail the run on one.
 
 ## Experimental rules
 
@@ -160,4 +171,4 @@ The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The f
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.19 (2026-10-10)
+Version: 1.20 (2026-10-10)

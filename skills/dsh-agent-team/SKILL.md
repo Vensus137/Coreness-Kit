@@ -29,6 +29,7 @@ description: "Team mode in DeepSeek Harness: the card board and its revisions, t
 - **A card no longer needed leaves the board** (`delete`, by its owner or by the lead); only a card that still blocks another is refused (`TEAM_TASK_HAS_DEPENDENTS`). A tombstone stays in the log — out of the list and out of the count, still readable by its id, and only a change to it is refused — and, unlike the roster, it gives room back: it takes no `maxTasks`.
 - **A cancelled card is closed by the lead with the reason in words:** interrupting a member is silent and leaves no record of why.
 - **Parallel cards get separate working copies** (`git worktree add`); in a shared tree a commit names its paths (`git commit -- <paths>`). **An executor does not commit — the lead commits by paths** — so a card's files reach history only through the lead, and that is also where its cost is read. **An overlap is warned about and never refused** (`warnings`): keeping one zone to one writer is the lead's discipline, not the platform's.
+- **Work begins with a card, not a word.** A lead that says "take it" and makes no card leaves the graph lying about what happened: one session worked several cards on a word before claiming them and the graph had to be reconciled by hand each time. The card is written before the member starts.
 
 ## What a card costs
 
@@ -36,12 +37,14 @@ description: "Team mode in DeepSeek Harness: the card board and its revisions, t
 
 ## Waiting and reporting
 
-**`wait_agent` is not a tool of this project.** The platform's own prompt offers it as the move of a blocked lead, and the same prompt requires the lead to have its members' results before a final answer; that prompt is not the project's law, and the difference is the project's. What stands instead, in this order: write the next thing owed — a status to the user, the picture, the backlog, the ledger, the next brief; `send_message` the question being held, since a message starts or resumes a member's turn; or say in one line that the turn is idle until a report arrives. A prohibition that names no substitute loses to a tool that is one call away.
+**`wait_agent` is not a tool of this project.** The platform's own prompt offers it as the move of a blocked lead, and the same prompt requires the lead to have its members' results before a final answer; that prompt is not the project's law, and the difference is the project's. What stands instead, in this order: write the next thing owed — a status to the user, the picture, the backlog, the ledger in `tmp/`, the next brief; `send_message` the question being held, since a message starts or resumes a member's turn; or say in one line that the turn is idle until a report arrives. A prohibition that names no substitute loses to a tool that is one call away.
 
 - **A report is a message, and a message starts the lead's next turn by itself** — nothing needs standing watch, and a lead standing in the conversation never waits.
 - **The one narrow exception:** the user asks for an answer that only a member still running can settle. Then one `wait_agent` with the shortest useful ceiling, its reason named to the user in the same turn, and the board re-listed after it returns or times out.
 - Waiting wakes on any team change — a status, a task update, an incoming message — and only a message carries a report. `inactive` means no turn is executing, not a task result: a required member that is inactive without a report is woken by a message, not waited for, and `wait_agent` answers `noProgress` when nobody is running.
 - **Reporting is the executor's duty:** there is no separate "work finished" notice, and a report, being a message, starts the lead's next turn without anyone standing watch.
+- **A member that has reported and has nothing to do says so in one line and ends its turn.** The waiting move is the lead's, taken once, with its reason named in the same message; a member does not stand watch, and `wait_agent` is not its tool.
+- **A report about a tree another hand is writing names the revision it was read at** — `git rev-parse --short HEAD` and `git status --porcelain` — because a reading taken while a neighbour writes is a verdict about a tree that moved: the same check came back green, then red, then green again inside one hour.
 
 ## The roster
 
@@ -60,3 +63,7 @@ Examples, not the whole list: `TEAM_TASK_STALE_REVISION`, `TEAM_TASK_ALREADY_CLA
 Observations about the harness, kept as reference rather than as rules: no check enforces them, and they age with the platform.
 
 - **A member's road is its own.** A selection belongs to a session, and the default row only starts fresh ones: a member is created on whatever provider and model the session stands on at that moment and keeps them for its life. Work that must ride a new road needs a member created after the switch.
+
+## The update loop
+
+A run names what this shape made easy and what it cost, and corrects this file in the same commit as the law it serves.
