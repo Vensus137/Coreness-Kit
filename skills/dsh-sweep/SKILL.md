@@ -23,9 +23,9 @@ Without this the sweep either stands still or oversteps. The runs behind this fi
 
 ## 2. The shape
 
-1. **Areas.** The scaffolding is divided into subjects, one reader each, one file each. A reader reads its subject whole — not from summaries, and not from the previous pass's prose. Experimental rules are read with special attention; if there are none, nothing is owed.
+1. **Areas.** The scaffolding is divided into subjects, one reader each, one file each. A reader reads its subject whole — not from summaries, and not from the previous pass's prose. Experimental rules are read with special attention; if there are none, nothing is owed. **Each reader also names the question it is not asking** — the frame its subject sits in, and what would make the area unnecessary; a reader that cannot name one says that instead.
 2. **Proposals.** The same reader proposes for its own subject: it holds the material. A proposal that only describes is not a proposal.
-3. **One challenge round, and a second only if an objection moved a proposal's ground.** Three critics who read from different angles: the law (does the proposal hold against the rules in force), what it breaks (the corpus, the citations, the neighbours), the evidence (does the evidence carry the claim). Each objection carries an address and the condition under which it survives.
+3. **One challenge round, and a second only if an objection moved a proposal's ground.** Three critics who read from different angles: the law (does the proposal hold against the rules in force), what it breaks (the corpus, the citations, the neighbours), the evidence (does the evidence carry the claim). Each objection carries an address and the condition under which it survives. **The critics receive the question and the material, not the lead's conclusion**, and one of them is asked first whether the subject should exist at all and what would make the pass unnecessary — a challenge that only re-argues inside the frame has not run.
 4. **Answers.** One file per area, by its author: what was accepted and what changed, what was refused and the address that settles it. Numbers the critics checked and found **right** are recorded as confirmations — a critic that only subtracts is half a critic.
 5. **Patches.** Prepared diffs, one file, one writer. `git apply --check` reads and writes nothing; it is the floor of the check, never its ceiling: the applied result is replayed against the intent before it lands.
 6. **One landing, one hand.** A second writer in one tree is a race — settled in §1's zones, by write zones or by a copy per hand — and the lead lands where the tree is quiet.
@@ -55,6 +55,8 @@ Each of these is written from a failure, not from a preference.
 - **The patch phase is not mechanical**: the findings that matter most arrive with the diffs.
 - **Commit by explicit paths, and expect another hand.** A second writer rewrote a line a prepared patch sat on and swept two finished patches into its own commit. Prepare diffs in the pass's own folder; never `git add -A`.
 - **A list of acts is a document nobody checks.** The plan's own order of acts forgot a decided act, and only the executor saw it.
+- **The wrong question is answered well, and it is the most expensive failure there is.** A pass with sound method and a wrong frame returns a confident number nobody can use: a share of a mass measured as a property of the tree when it was a property of the criterion, a guard audited for its benefit when the question was whether it should exist at all. The frame is opened before the hands are spent, in one line, and the question that is not being asked is named with it.
+- **An instrument is fixed before a number is compared.** Two readings of one mass differed by several points with nobody judging anything, because each measured the classes only its own rule could see; a denominator that moves under the measuring moves the conclusion. When a share is to be ruled on, the count becomes a command first, and the command says what it did not read.
 
 ## 6. What it refuses
 

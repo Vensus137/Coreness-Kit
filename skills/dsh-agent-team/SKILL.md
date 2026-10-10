@@ -34,6 +34,7 @@ description: "Team mode in DeepSeek Harness: the card board and its revisions, t
 ## What a card costs
 
 - **One reading, one tool:** a reader written for a card is designed before it is written, and prints every field the decision needs.
+- **A brief names a question, not a conclusion.** Subject, acceptance criterion, ground — and the question the work is not asking. A brief that hands over its own answer buys agreement, and agreement is not what a card is for.
 
 ## Waiting and reporting
 
