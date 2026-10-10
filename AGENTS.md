@@ -35,7 +35,7 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 
 **A retelling is not a reading.** A rule, a path, a number or a mechanism the work will stand on is taken from its source at the moment it becomes load-bearing; a summary, a review's own words or the memory of the one who read it is a prompt to open the source, not a substitute for it.
 
-**Checks by the size of the change.** The mapping "type of change → set of checks" lives in the project and is not chosen anew for every change; the full set is for changes that touched logic. Edits of texts and data are checked pointwise. A move or a rename is not a text edit: anything that depends on location is checked by a run. A check is written so that what is legitimate does not fall under it; a legitimate hit is named in the report and the check is corrected — the text is not edited to satisfy it.
+**Checks by the size of the change.** The mapping "type of change → set of checks" lives in the project and is not chosen anew for every change; the full set is for changes that touched logic. Edits of texts and data are checked pointwise. A move or a rename is not a text edit: anything that depends on location is checked by a run. A check is written so that what is legitimate does not fall under it; a legitimate hit is named in the report and the check is corrected — the text is not edited to satisfy it. **A check is written for what the work produces, not for how the work is written:** the wording of a text, the shape of a comment, a stale number, a reference — a class of drift — is found by **reading**, when the work touches that class and again at the close, and no standing check is written for it. A reading kept for such a class is a finder, run on demand: it reports, and it does not fail a run.
 
 **Agent steps are the main cost.** Related edits go in one pass; independent checks run in parallel and are designed as such; intermediate runs between small edits are not repeated. Large outputs live on disk — extracts come into the conversation.
 
@@ -139,7 +139,7 @@ The documents of the project are read by an agent: a cold session must enter the
 ## What is not done
 
 - **Temporary only in `tmp/` and in its own folder.** Drafts, runs and experiments live in `tmp/<slug>/` — one work, one folder: a task, a session or an experiment; the name says what is inside. Cleanup comes down to deleting the folder; nothing temporary stays in the code; `tmp/` is in `.gitignore` (not there — add it).
-- **Prose in the code.** A comment or a docstring is the non-derivable "why", an invariant or a boundary of a decision, not a retelling of the code. Test: delete the phrase — would the next session make a wrong decision? No — the phrase is extra.
+- **Prose in the code.** A comment or a docstring states a fact of its own place that the code cannot carry at a price a reader would accept — a boundary, an invariant, an ordering, the price of a decision, a trap that cost an hour. It is worth its lines only where deleting it makes the next session decide wrongly and no name, a type or the order of the code would have said it instead; what the code or a test already states is not repeated in prose. A fact that would need a new check to carry it stays a comment: a check costs more than a line.
 - **No address in the code.** A comment names no document, no path and no line, not even in passing: code carries the facts of its own place — an invariant, a boundary, the price of a decision — and never a pointer to where something is written down. A comment that says where to read instead of what holds is a defect, and a check may fail the run on one.
 
 ## Experimental rules
@@ -170,4 +170,4 @@ The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The f
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.21 (2026-10-10)
+Version: 1.22 (2026-10-10)
