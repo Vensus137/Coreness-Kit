@@ -17,7 +17,7 @@ The picture is not a log: no dates, no "what was done", no chronicles or progres
 
 A session starts with the picture. No file — build it: the visible part comes from code, configs and git history; questions are asked only about the unknowable, in a batch. When the file and the facts diverge, the fact wins and the file is brought to it in the same pass.
 
-The picture is kept by whoever changed the project: a task is closed and something changed — update it in the same pass. There is one picture: no second picture file is started; parallel agents edit it along with the code, and git reconciles conflicts. When it stops being readable in one sitting, it is split, but the entry stays single. A split is an entry that names every part, each part one hop away and self-sufficient. A document does not require a line longer than its reader can receive: the limit is read from the read tool or the loader and chosen by no tree.
+The picture is kept by whoever changed the project: a task is closed and something changed — update it in the same pass. There is one picture: no second picture file is started; parallel agents edit it along with the code, and git reconciles conflicts. The entry is what a cold session reads before it works, so its limit is the session's own reading and not a size: whoever keeps the picture splits it when the picture can no longer be walked for one subject without leaving the entry — and the entry stays single, naming every part, each part one hop away and self-sufficient, with the row that names each part the only thing kept in it. A part nobody needs to open is a hop that answers nothing; a document that is looked up by section rather than walked is not this rule's subject. A document does not require a line longer than its reader can receive: the limit is read from the read tool or the loader and chosen by no tree.
 
 **The law's home is the kit, and a project's picture never repairs it.** A rule that is right in every project is written here; a rule that is right in one is written in that project's picture, in words that name the project as its subject. A finding that a universal rule is missing, wrong or unclear is carried to the kit — it is not answered by writing the rule into one project's picture. A project that must diverge now names the divergence where it stands, with its reason, and carries it here in the same pass: the divergence is a debt of the kit, not the project's law.
 
@@ -183,4 +183,4 @@ The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The f
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.29 (2026-10-12)
+Version: 1.30 (2026-10-12)
