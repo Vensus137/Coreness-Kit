@@ -23,7 +23,7 @@ Without this the sweep either stands still or oversteps. The runs behind this fi
 
 ## 2. The shape
 
-1. **Areas.** The scaffolding is divided into subjects, one reader each, one file each. A reader reads its subject whole — not from summaries, and not from the previous pass's prose. Experimental rules are read with special attention; if there are none, nothing is owed. **Each reader also names the question it is not asking** — the frame its subject sits in, and what would make the area unnecessary; a reader that cannot name one says that instead.
+1. **Areas.** First act of the pass: read the outgoing scope against a **named** revision, and choose what to run from what it actually carries. The scaffolding is divided into subjects, one reader each, one file each. A reader reads its subject whole — not from summaries, and not from the previous pass's prose. Experimental rules are read with special attention; if there are none, nothing is owed. **Each reader also names the question it is not asking** — the frame its subject sits in, and what would make the area unnecessary; a reader that cannot name one says that instead.
 2. **Proposals.** The same reader proposes for its own subject: it holds the material. A proposal that only describes is not a proposal.
 3. **One challenge round, and a second only if an objection moved a proposal's ground.** Three critics who read from different angles: the law (does the proposal hold against the rules in force), what it breaks (the corpus, the citations, the neighbours), the evidence (does the evidence carry the claim). Each objection carries an address and the condition under which it survives. **The critics receive the question and the material, not the lead's conclusion**, and one of them is asked first whether the subject should exist at all and what would make the pass unnecessary — a challenge that only re-argues inside the frame has not run.
 4. **Answers.** One file per area, by its author: what was accepted and what changed, what was refused and the address that settles it. Numbers the critics checked and found **right** are recorded as confirmations — a critic that only subtracts is half a critic.
@@ -41,6 +41,7 @@ Without this the sweep either stands still or oversteps. The runs behind this fi
 ## 4. What an artifact carries
 
 - **A finding**: `claim / kind / trace / cost / proposal` — the claim being what the finding asserts and can be held to, the kind being the thing the claim is about (a rule, a path, a number, a mechanism), the trace being the finding's source — a commit, a file, an output — named where it stands, the cost being the work the defect spends today.
+- **A blocker is separated from a defect**: it decides whether the prepared change can land, not how bad the defect is.
 - **A proposal**: what changes, in which file, **what it removes**, **its price** — the work it costs to make and to keep — **the cause it answers** — where the defect is produced and the other case the change catches — what breaks if it is wrong, what it does not do, and which alternatives lost and why. A proposal whose "what it removes" is empty is a rule that only adds — refuse it.
 
 ## 5. The rules that cost the most
@@ -63,7 +64,7 @@ Each of these is written from a failure, not from a preference.
 - **Truth.** The sweep proposes, challenges and escalates; the user decides what is contentious. A majority of critics is not a proof.
 - **A promise of cheapness**, and a fixed roster: the areas are counted from the subject, not from a template.
 - **A second picture, a second backlog, a parallel index** that must be kept true by hand.
-- **One face of one thing** — a plugin, a module, a document — is `reflection`'s, and it changes nothing; a sweep takes the scaffolding as a class and ends in diffs.
+- **One face of one thing.** A sweep takes the scaffolding as a class and ends in diffs: a plugin, a module, a document are not its subject.
 - **Working without an owner**: a file whose keeper is unnamed will rot, and the rot will be found by the next sweep.
 
 ## 7. The end

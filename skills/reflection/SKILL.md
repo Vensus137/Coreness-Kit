@@ -51,6 +51,8 @@ A pass names, with the question it was given, the one whose answer would make th
 
 The outcome is stated as an answer to that question; what the question left out is named as what it left out. A pass that finds the frame wrong says so and stops, rather than answering well inside it. The default direction of an improvement point is **subtraction** — what can go — and a proposal that only adds is refused.
 
+Keep, and say that it is kept: a rule that holds and is paid for by a defect; a number whose artifact is a command; a door that a reader needs to act; a reason whose loss would make the next session decide wrongly. What is trimmed is the chronicle, the receipt, the repeated sentence and the number whose artifact has gone.
+
 ## Result
 
 The outcome goes into the conversation, briefly: improvement points — the subject, the essence, the trace. Findings go to execution: reflection names only what is verified as an improvement, therefore "can wait" does not exist. The user's word is the one hold it knows: what he puts off is written down with its reason. Doubt that something is an improvement — not a finding: drop it or ask. What the reflection itself got wrong, or could not check, is named with it; a finding is read by someone who did not write it, and where the work allows no second reader, the report says so. "Clean" is an outcome too: name what was checked against. No file is started: an extract asked for while the work runs goes into `tmp/<slug>/`, and what survives a reflection is its conclusion — lifted into the picture or into the code — not a file.
@@ -61,5 +63,4 @@ Findings about conventions are named separately so that they do not drown among 
 
 
 - The user starts it; the agent may propose a moment — a series of tasks is closed, a review has not run for long — but does not start it.
-- A change that reaches the whole scaffolding — the law, the procedures, the documents as a class — is a sweep, `dsh-sweep`, not a reflection.
 - A report for the sake of a report is not assembled: reflection is about improvement points, not about a document.
