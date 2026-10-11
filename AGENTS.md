@@ -33,7 +33,7 @@ The picture is kept by whoever changed the project: a task is closed and somethi
 
 **Challenge is the norm.** Words are not taken as truth: verify, doubt, name the weak spots — in the decisions of the user and of the agent alike. Agreement out of politeness is a loss. The goal of the argument is truth, not agreement.
 
-**Report by evidence.** A handover names: what was done; what confirms it — a command and its output, not "it works"; what the check did not show; where the work stopped if unfinished. The same holds for written texts: "works", "faster", "safe" are not written without a command, a measurement or a reference. Success is claimed after observation, not instead of it. A claim read off a tree another hand is writing names the revision and the state it was read at. A reading that touches a live environment names what the environment gave it — an identifier the other side generates per call, a count of another program's own furniture — or says in its own words that the two cannot be told apart.
+**Report by evidence.** A handover names: what was done; what confirms it — a command and its output, not "it works"; what the check did not show; where the work stopped if unfinished. The same holds for written texts: "works", "faster", "safe" are not written without a command, a measurement or a reference. A reference proves that a name occurs and never that the value it names is read: a copy, a container or a search carries a name without consuming it. Success is claimed after observation, not instead of it. A claim read off a tree another hand is writing names the revision and the state it was read at. A reading that touches a live environment names what the environment gave it — an identifier the other side generates per call, a count of another program's own furniture — or says in its own words that the two cannot be told apart.
 
 - **A dead end is a report, not a siege.** Signs of a dead end: the solution does not stand on the facts — it cannot be implemented, the inputs diverged, it went wrong; or several different approaches gave no progress. Once the dead end is recognised, the search stops: a short report goes up — where it stopped, what was tried, what is proposed; the addressee is the task setter, and under delegation the lead agent. The reverse boundary: the rule is about a dead end, not about the first difficulty; the executor makes reasonable attempts before reporting.
 
@@ -102,7 +102,7 @@ They hold on any stack. A violation is a defect, not a "style": it is fixed, not
 
 **One instrument per comparison.** A before-and-after pair is valid only when one instrument took both sides; a tool changed between them makes the pair a reading about the tool, and a comparison whose instrument is unknown is not taken.
 
-**A plant proves reach.** A plant that silently fails to land is worse than none — its clean result is read as proof of a change it never touched. What is refused is the proof by absence: "nothing moved, therefore the change is safe" is not a proof.
+**A plant proves reach and never need.** A plant that silently fails to land is worse than none — its clean result is read as proof of a change it never touched. A check whose only witness is the state it plants has met nothing the work produces, and its green is evidence of its own reach alone. What is refused is the proof by absence: "nothing moved, therefore the change is safe" is not a proof.
 
 **A plant lives in the run's own copy.** Where the artifact under test is copied before it is served, the plant goes into the copy, between the copy and the boot: no shared tree is frozen, no other run can see it, and a plant that does not land is refused and named.
 
@@ -142,7 +142,7 @@ The documents of the project are read by an agent: a cold session must enter the
 
 - **Temporary only in `tmp/` and in its own folder.** Drafts, runs and experiments live in `tmp/<slug>/` — one work, one folder: a task, a session or an experiment; the name says what is inside. Cleanup comes down to deleting the folder; nothing temporary stays in the code; `tmp/` is in `.gitignore` (not there — add it).
 - **Prose in the code.** A comment or a docstring states a fact of its own place that the code cannot carry at a price a reader would accept — a boundary, an invariant, an ordering, the price of a decision, a trap that cost an hour. It is worth its lines only where deleting it makes the next session decide wrongly and no name, a type or the order of the code would have said it instead; what the code or a test already states is not repeated in prose. A fact that would need a new check to carry it stays a comment: a check costs more than a line.
-- **No address in the code.** A comment names no document, no path and no line, not even in passing: code carries the facts of its own place — an invariant, a boundary, the price of a decision — and never a pointer to where something is written down. A comment that says where to read instead of what holds is a defect, found by reading; no standing check is written for it.
+- **No address in the code.** A comment names no document, no path and no line a reader must walk to, not even in passing: code carries the facts of its own place — an invariant, a boundary, the price of a decision — and never a pointer to where something is written down. A comment that says where to read instead of what holds is a defect, found by reading; no standing check is written for it.
 
 ## Experimental rules
 
@@ -172,4 +172,4 @@ The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The f
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.27 (2026-10-11)
+Version: 1.28 (2026-10-11)
