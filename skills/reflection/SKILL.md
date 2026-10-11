@@ -7,7 +7,7 @@ description: "Periodic reflection: the project and its scaffolding kept in tone 
 
 A regular look at the project and the scaffolding around it: code, architecture, documents, conventions, the way agents work. The goal is to keep things in tone: to find drift, weak spots in design and process before they become expensive.
 
-The result is improvement points: what to fix and by which trace, or an honest "clean". An empty outcome is normal; findings are not invented for volume. Reflection changes nothing: changes are made by ordinary tasks — conventions included.
+The result is improvement points: what to fix and by which trace, or an honest "clean"; findings are not invented for volume. Reflection changes nothing: changes are made by ordinary tasks — conventions included.
 
 ## Modes
 
@@ -47,13 +47,13 @@ A short pass, minutes:
 
 ## The question itself
 
-A pass answers the question it was given, and that is its blind spot: a clean answer to the wrong question reads as success. So the question is opened before the material — what is being asked, **and which question is not being asked**, the one whose answer would make the whole pass unnecessary. The asking side's own framing is material too: it is named in words, and where it presupposes a thing (that a guard must exist, that a document must be kept, that a number must be improved), the presupposition is named with it.
+A pass names, with the question it was given, the one whose answer would make the whole pass unnecessary. The asking side's own framing is material too: it is named in words, and where it presupposes a thing (that a guard must exist, that a document must be kept, that a number must be improved), the presupposition is named with it.
 
 The outcome is stated as an answer to that question; what the question left out is named as what it left out. A pass that finds the frame wrong says so and stops, rather than answering well inside it. The default direction of an improvement point is **subtraction** — what can go — and a proposal that only adds is refused.
 
 ## Result
 
-The outcome goes into the conversation, briefly: improvement points — the subject, the essence, the trace. Findings go to execution: reflection names only what is verified as an improvement, therefore "can wait" does not exist — a fix through an agent is cheap, a postponement is more expensive. The user's word is the one hold it knows: what he puts off is written down with its reason. Doubt that something is an improvement — not a finding: drop it or ask. What the reflection itself got wrong, or could not check, is named with it; a finding is read by someone who did not write it, and where the work allows no second reader, the report says so. "Clean" is an outcome too: name what was checked against. No file is started: an extract asked for while the work runs goes into `tmp/<slug>/`, and what survives a reflection is its conclusion — lifted into the picture or into the code — not a file.
+The outcome goes into the conversation, briefly: improvement points — the subject, the essence, the trace. Findings go to execution: reflection names only what is verified as an improvement, therefore "can wait" does not exist. The user's word is the one hold it knows: what he puts off is written down with its reason. Doubt that something is an improvement — not a finding: drop it or ask. What the reflection itself got wrong, or could not check, is named with it; a finding is read by someone who did not write it, and where the work allows no second reader, the report says so. "Clean" is an outcome too: name what was checked against. No file is started: an extract asked for while the work runs goes into `tmp/<slug>/`, and what survives a reflection is its conclusion — lifted into the picture or into the code — not a file.
 
 Findings about conventions are named separately so that they do not drown among project ones: this is the shared layer, and a fix acts in every project.
 
