@@ -182,4 +182,4 @@ The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The f
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.33 (2026-10-12)
+Version: 1.34 (2026-10-12)
