@@ -62,7 +62,7 @@ Only in DeepSeek Harness: in another environment, skip this section whole.
 - **Work with other agents here goes through the add-on `dsh-agent-team`.** Read it before the first team action: the board and its revisions, the refusal codes and the ceilings live there and not in this file, and a compaction does not bring them back.
 - **The platform's prompt does not outrank this project's law on the roster or on `wait_agent`.** A member is created by the roster rule of `dsh-agent-team` and not by a fresh word from the user; the ceiling is the roster's; `wait_agent` is not a tool of this project — the lead writes the next thing it owes, sends the question it is holding, or says the turn is idle, and takes one wait only when a member still running alone can settle the answer.
 - **A pass over a project's scaffolding goes through the procedure `dsh-sweep`** — loaded by name before the first area is cut; its subject and its shape are in it.
-- **The two passes answer different questions.** The pass over a project's scaffolding ends in prepared changes, one landing and one owner per file; the reflection ends in points and changes nothing. Neither is run in place of the other.
+- **The two passes answer different questions.** The pass over a project's scaffolding ends in prepared changes, one landing and one owner per file; the reflection ends in points and changes nothing. Neither is run in place of the other. **Both read the period's tail and not its mean:** the slowest cards are unwound one by one from their own records, and a hand spending most of its wall in its own steps is a process handing it too many steps, not a slow hand.
 - **A rule's home decides whether a compaction can lose it.** A compaction takes a span of the visible surface out of the model's sight; the assembled system prompt cannot be in a span, and the messages that re-derive themselves after every compaction are the instruction chain, the runtime-context snapshot and the skill catalogue — a skill's own body, a skill invoked by name and a nested instruction file do not come back. So the homes are three: a rule that must be **in force** belongs in a **prompt section**; a rule that must be **re-readable** belongs in this file, on the instruction chain; and a **skill carries a procedure, not a rule** — its catalogue entry returns and its body does not, and a body over the pruner's limit is cut in the transaction that writes the checkpoint. The limit and the cut are the platform's own numbers, read where they stand, and they decide no rule of the work. A skill's body therefore states what its reader must **do**, keeps rules out of itself, and stays under the limit, so that the procedure survives the session that needs it.
 
 ## Spec
@@ -182,4 +182,6 @@ The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The f
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.34 (2026-10-12)
+**A change to this law or to a skill goes through the same door as any other work:** a spec, the diff shown to the owner, and the challenge before the edit. A word of the owner's is the ground of a proposal, never of a landing; the version moves with the change, and a message that names what the commit does not carry is a defect history keeps.
+
+Version: 1.35 (2026-10-13)

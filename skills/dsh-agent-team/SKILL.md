@@ -50,6 +50,7 @@ description: "Team mode in DeepSeek Harness: the card board and its revisions, t
 ## The roster
 
 - **A card goes to the member holding its subject; a fresh member earns its entry only where none can take it without judging its own work.**
+- **A slow card is not itself a reason to add a member.** Adding agents moves work between hands; it does not shorten a path, and what a card that took half an hour needs is read from its own record, not answered with another hand.
 - **No place comes back:** every creation counts for the life of the session, failed ones too, and the name is spent with it. The next is refused with `TEAM_MEMBER_LIMIT` ("Team member limit <n> reached").
 - **The ceiling** is `maxMembers` in the team row's `config` — the platform's own figure there, and in an environment whatever its profile's patch declares. It is raised from that patch by an `id`-targeted entry that restates the **whole** `config`, since it is replaced and not merged (`maxMembers`, `maxTasks`, `maxPendingMessagesPerMember`, `maxMessageBytes`, `disposalTimeoutMs`); a restart applies it.
 - A member that has exhausted its context is not revived: its subject moves to another member, and everything found on the way stays on disk for whoever takes the subject up.

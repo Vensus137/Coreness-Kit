@@ -9,13 +9,11 @@ A regular look at the project and the scaffolding around it: code, architecture,
 
 The result is improvement points: what to fix and by which trace, or an honest "clean"; findings are not invented for volume. Reflection changes nothing: changes are made by ordinary tasks — conventions included.
 
-## The criterion
+## The tails, not the mean
 
-**The speed of shipping features.** One path is measured: an approved spec to a working thing in its owner's hands. A point is an improvement only by what it removes from that path — by how much shorter the path becomes — and a point that shortens nothing is not one. Under the criterion sit what moves it: the steps a hand spends, how a card is cut, the price of a script, waiting, the landing; they are material for the analysis, never goals of their own.
+The material is the period's slowest cards, unwound one by one from their own records; a mean hides exactly what the pass is for, and a card that took half an hour is a defect of the process before it is a property of that hand. A hand spending most of its wall in its own steps is not a slow hand — it is a process that hands it too many steps. The steps a hand spends, how a card is cut, the price of a script, waiting and the landing are material for the analysis, never goals of their own; what a point must shorten is read by the law's own test («a change is counted by what it removes») and is not restated here.
 
-**More hands is not a lever.** Adding agents moves work between hands; it does not shorten the path, and it is not accepted as an answer to a slow card.
-
-**The tails, not the mean.** The period's slowest cards are unwound one by one from their own records; a mean hides them, and a card that took half an hour is a defect of the process before it is a property of that hand. A hand spending most of its wall in its own steps is not a slow hand — it is a process that hands it too many steps.
+**No hand is added as an answer to a slow card.** Adding agents moves work between hands; the roster rule that refuses it stands in `dsh-agent-team`.
 
 ## Modes
 
@@ -57,6 +55,8 @@ A short pass, minutes:
 
 A pass names, with the question it was given, the one whose answer would make the whole pass unnecessary. The asking side's own framing is material too: it is named in words, and where it presupposes a thing (that a guard must exist, that a document must be kept, that a number must be improved), the presupposition is named with it.
 
+**A thesis of the asking side is a claim under test, never a premise.** It enters the pass with the command that confirms or refutes it, and where no such command exists the pass says so in those words instead of agreeing; the pass's own agreement is not a finding, and a word from the owner is the ground of a proposal, not of a landing.
+
 The outcome is stated as an answer to that question; what the question left out is named as what it left out. A pass that finds the frame wrong says so and stops, rather than answering well inside it. The default direction of an improvement point is **subtraction** — what can go — and a proposal that only adds is refused.
 
 Keep, and say that it is kept: a rule that holds and is paid for by a defect; a number whose artifact is a command; a door that a reader needs to act; a reason whose loss would make the next session decide wrongly. What is trimmed is the chronicle, the receipt, the repeated sentence and the number whose artifact has gone.
@@ -64,6 +64,8 @@ Keep, and say that it is kept: a rule that holds and is paid for by a defect; a 
 ## Result
 
 The outcome goes into the conversation, briefly: improvement points — the subject, the essence, the trace. Findings go to execution: reflection names only what is verified as an improvement, therefore "can wait" does not exist. The user's word is the one hold it knows: what he puts off is written down with its reason. Doubt that something is an improvement — not a finding: drop it or ask. What the reflection itself got wrong, or could not check, is named with it; a finding is read by someone who did not write it, and where the work allows no second reader, the report says so. "Clean" is an outcome too: name what was checked against. No file is started: an extract asked for while the work runs goes into `tmp/<slug>/`, and what survives a reflection is its conclusion — lifted into the picture or into the code — not a file.
+
+**A declared ceiling, and a handover that is not optional.** Before the first step the pass fixes what it may spend — steps or credits — and what it hands over; reaching the ceiling ends the pass in its result, never in a continuation.
 
 Findings about conventions are named separately so that they do not drown among project ones: this is the shared layer, and a fix acts in every project.
 

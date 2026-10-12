@@ -9,11 +9,11 @@ A pass over a project's scaffolding — the law, the procedures, the documents a
 
 ## The criterion
 
-**The speed of shipping features.** A sweep exists to shorten the path from an approved spec to a working thing in its owner's hands: a proposal is judged by how much of that path it removes, and one that removes none is refused the way an empty removal is. The criterion is read off the steps a hand spends per card, how a card is cut, the price of a script and of the landing, waiting and hangs. **More hands is not a lever** — a proposal that answers a slow card by adding agents moves the work instead of shortening the path. **The material is the tail:** the period's slowest cards are unwound one by one from their records, because a mean hides exactly what the pass is for.
+**The material is the tail.** The period's slowest cards are unwound one by one from their records, because a mean hides exactly what the pass is for. The reading sits on the steps a hand spends per card, how a card is cut, the price of a script and of the landing, waiting and hangs — material for the analysis, never goals of their own. What a proposal must remove is the law's own test («a change is counted by what it removes»), and an empty removal is refused there as it is here. **More hands is not a lever** — the roster rule that refuses it stands in `dsh-agent-team`, and a proposal that answers a slow card by adding agents moves the work instead of shortening the path.
 
 **The shape below is a floor, not a script.** Where a subject needs a phase this file does not name, take it and say why. Both runs of this procedure so far found their sharpest findings *outside* the plan: a citation that resolved green over a sentence that had gone false, and a repair that exposed the very defect it repaired. A sweep that follows the letter and skips what it sees has failed the larger half of its job.
 
-**It is expensive, and it says so.** The run behind this file is the evidence and not a shape to copy. Use it on the scaffolding — never on a task. A task has a spec; a sweep has a subject.
+**It is expensive, and it says so.** The run behind this file is the evidence and not a shape to copy. Use it on the scaffolding — never on a task. A task has a spec; a sweep has a subject. **A declared ceiling stands before the first area** — what the pass may spend in steps or credits, and what it hands over when that is reached: the ceiling ends the pass in its result, never in a continuation, and the pass's own cost is named in the handover.
 
 ## 1. Zones first, before any work
 
@@ -21,7 +21,8 @@ The first thing the sweep asks the user, in one batch with defaults:
 
 - **what may be touched** — which paths are ours, which are another hand's, which are never touched;
 - **what the lead may land alone** when the checks are green, and **what waits for the user's word** — a rule of the law, a published snapshot, anything contentious;
-- **how far the sweep goes** — one subject, or the whole scaffolding.
+- **how far the sweep goes** — one subject, or the whole scaffolding;
+- **which theses of his own stand in the frame**, each taken as a claim under test: the sweep owes the command that confirms or refutes it, and where none exists it says so in those words instead of agreeing. A word from him is the ground of a proposal, not of a landing.
 
 Without this the sweep either stands still or oversteps. The runs behind this file did both: a scope that kept the law out of the first pass, and a plan stopped before its first strip.
 
@@ -37,9 +38,11 @@ Without this the sweep either stands still or oversteps. The runs behind this fi
 
 ## 3. The members, and what each owes
 
-- **One reader per area.** It reads its subject, writes its area file, then its proposal. It does not write another area's file, ever.
-- **Three critics, never authors** of what they judge. Majority decides what survives; **a refusal escalates to the user and is not the truth.** The sweep reduces uncertainty; it does not own it. **Every proposal is asked the cause it answers:** where the defect is produced and what other case the change catches — a cause that names no place of production, or no other case it catches, is refused the way an empty removal is.
-- **The lead writes no area of its own**; when an owner is gone it repairs what that owner can no longer correct and names the repair (§5).
+Four hands, and each one's result is named with it.
+
+- **A reader of an area** receives its subject and the revision it is read at; it owes the reading whole from the sources — never from a summary — and the question it is not asking; its result is the area file and, for its own subject, a proposal that names what it removes, its price, the cause it answers — where the defect is produced and what other case the change catches — and what it does not do. A proposal that only describes is not a proposal. It does not write another area's file, ever.
+- **A critic** receives the question and the material, never the lead's conclusion, and is never an author of what it judges; for every proposal it owes an objection with its address and the condition under which it survives, and a confirmation where the numbers it checked came out right — a critic that only subtracts is half a critic. One critic is asked first whether the subject should exist at all. Its result is the challenge file. Majority decides what survives; **a refusal escalates to the user and is not the truth** — the sweep reduces uncertainty and does not own it.
+- **The lead** receives the zones and the areas; it owes the order, the roster and the landing; **it writes no area of its own**, and when an owner is gone it repairs what that owner can no longer correct and names the repair (§5). Its result is the record of §7: the prepared diffs, the decisions listed apart from the decided ones, the ledger with its corrections section, and what was not settled named as not settled.
 - **A card is a document like any other**, checked against the specification it summarises; the executor sees the gap.
 
 ## 4. What an artifact carries
