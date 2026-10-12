@@ -1,0 +1,9 @@
+# Allow-list: everything is ignored unless it is named here, so a draft, a run or a
+# note cannot enter a commit by accident. A file the kit is to carry is named here first.
+*
+!.gitignore
+!AGENTS.md
+!LICENSE
+!README.md
+!skills/
+!skills/**
