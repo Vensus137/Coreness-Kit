@@ -7,6 +7,10 @@ description: "A conventions sweep: the areas of a project's scaffolding audited 
 
 A pass over a project's scaffolding — the law, the procedures, the documents as a class — run by several members at once and ended by diffs that land. It exists because scaffolding grows by accretion: a rule answers a moment, the moment passes, the rule stays, and nobody re-reads the whole of it. A sweep re-reads the whole of it, and its result is not a report: it is a set of prepared changes plus the decisions the user alone may take.
 
+## The criterion
+
+**The speed of shipping features.** A sweep exists to shorten the path from an approved spec to a working thing in its owner's hands: a proposal is judged by how much of that path it removes, and one that removes none is refused the way an empty removal is. The criterion is read off the steps a hand spends per card, how a card is cut, the price of a script and of the landing, waiting and hangs. **More hands is not a lever** — a proposal that answers a slow card by adding agents moves the work instead of shortening the path. **The material is the tail:** the period's slowest cards are unwound one by one from their records, because a mean hides exactly what the pass is for.
+
 **The shape below is a floor, not a script.** Where a subject needs a phase this file does not name, take it and say why. Both runs of this procedure so far found their sharpest findings *outside* the plan: a citation that resolved green over a sentence that had gone false, and a repair that exposed the very defect it repaired. A sweep that follows the letter and skips what it sees has failed the larger half of its job.
 
 **It is expensive, and it says so.** The run behind this file is the evidence and not a shape to copy. Use it on the scaffolding — never on a task. A task has a spec; a sweep has a subject.

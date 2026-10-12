@@ -9,6 +9,14 @@ A regular look at the project and the scaffolding around it: code, architecture,
 
 The result is improvement points: what to fix and by which trace, or an honest "clean"; findings are not invented for volume. Reflection changes nothing: changes are made by ordinary tasks — conventions included.
 
+## The criterion
+
+**The speed of shipping features.** One path is measured: an approved spec to a working thing in its owner's hands. A point is an improvement only by what it removes from that path — by how much shorter the path becomes — and a point that shortens nothing is not one. Under the criterion sit what moves it: the steps a hand spends, how a card is cut, the price of a script, waiting, the landing; they are material for the analysis, never goals of their own.
+
+**More hands is not a lever.** Adding agents moves work between hands; it does not shorten the path, and it is not accepted as an answer to a slow card.
+
+**The tails, not the mean.** The period's slowest cards are unwound one by one from their own records; a mean hides them, and a card that took half an hour is a defect of the process before it is a property of that hand. A hand spending most of its wall in its own steps is not a slow hand — it is a process that hands it too many steps.
+
 ## Modes
 
 - **Pulse** — a quick pass after a series of tasks: whether something slipped. Consistency, hygiene, adherence to conventions — without diving deep.
