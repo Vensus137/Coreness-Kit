@@ -64,7 +64,6 @@ Only in DeepSeek Harness: in another environment, skip this section whole.
 - **A pass over a project's scaffolding goes through the procedure `dsh-sweep`** — loaded by name before the first area is cut; its subject and its shape are in it.
 - **The two passes answer different questions.** The pass over a project's scaffolding ends in prepared changes, one landing and one owner per file; the reflection ends in points and changes nothing. Neither is run in place of the other.
 - **A rule's home decides whether a compaction can lose it.** A compaction takes a span of the visible surface out of the model's sight; the assembled system prompt cannot be in a span, and the messages that re-derive themselves after every compaction are the instruction chain, the runtime-context snapshot and the skill catalogue — a skill's own body, a skill invoked by name and a nested instruction file do not come back. So the homes are three: a rule that must be **in force** belongs in a **prompt section**; a rule that must be **re-readable** belongs in this file, on the instruction chain; and a **skill carries a procedure, not a rule** — its catalogue entry returns and its body does not, and a body over the pruner's limit is cut in the transaction that writes the checkpoint. The limit and the cut are the platform's own numbers, read where they stand, and they decide no rule of the work. A skill's body therefore states what its reader must **do**, keeps rules out of itself, and stays under the limit, so that the procedure survives the session that needs it.
-- **A change to a prompt or to a skill is measured in the tokens it costs.** The prompt is paid for by every request: a section, a rule or a body that grows is measured — the first-turn tokens it adds, read with the platform's own accounting — and a line that would not change a decision is refused entry.
 
 ## Spec
 
@@ -123,7 +122,7 @@ They hold on any stack. A violation is a defect, not a "style": it is fixed, not
 
 **Derived in the same change.** A generated artifact is rebuilt by the same change as its source: the content of the generation is part of the diff, not a separate ritual.
 
-**Simple before complex.** A solution starts simple; if it grows complex, that is a signal to stop and find where to simplify or split instead of piling up. Technique — dependencies, caches, extra layers — comes on proven need. A change is counted by what it removes: a sentence that leaves, a class of defect that stops being possible, an action that stops being spent. What it removes is read in the session that comes next: a cold session enters the work quickly and is not mistaken.
+**Simple before complex.** A solution starts simple; if it grows complex, that is a signal to stop and find where to simplify or split instead of piling up. Technique — dependencies, caches, extra layers — comes on proven need. A change is counted by what it removes, and its size is no measure of it: a sentence that leaves, a class of defect that stops being possible, an action that stops being spent, a line that would not change a decision. What it removes is read in the session that comes next: a cold session enters the work quickly and is not mistaken.
 
 **Tests by risk, not by ritual.** A test goes where an error is expensive and a regular run cannot see it: complex pure logic, rare edges. Glue and the obvious are checked by a run. Tests do not multiply: each must answer a question that would otherwise stay blind; a test is a check of behaviour, not a number.
 
@@ -183,4 +182,4 @@ The kit is `AGENTS.md` and the folder `skills/` from the kit's repository. The f
 
 Rules are taken as a complete snapshot. Pulling a fresh one — first show what will change, then replace.
 
-Version: 1.32 (2026-10-12)
+Version: 1.33 (2026-10-12)
