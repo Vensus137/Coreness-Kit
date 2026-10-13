@@ -1,34 +1,32 @@
 ---
 name: reflection
-description: "Periodic reflection: the project and its scaffolding kept in tone — by traces, not by feelings. Looks for architecture drift, weak spots in design, redundant and repeated agent actions, conventions that are not followed or that get in the way. Started by the user on request («reflection», «audit», «pulse», «what can be improved»); a fitting moment is a reason to propose it, not to start it. English triggers: reflection, audit, architecture review, pulse check, look for improvements."
+description: "Periodic reflection: the project and its scaffolding kept in tone — by traces, not by feelings. Looks for architecture drift, weak spots in design, redundant and repeated agent actions, conventions that are not followed, divergences between the project's life and the law in force. Modes: pulse — a quick pass after a series of tasks; review — a full one, periodically; either narrows to a subject — a module, a theme, a series of tasks. Started by the user on request («reflection», «audit», «pulse», «what can be improved»); a fitting moment is a reason to propose it, not to start it. The result is improvement points in the conversation. English triggers: reflection, audit, architecture review, pulse check, look for improvements."
 ---
 
 # Reflection
 
-A regular look at the project and the scaffolding around it: code, architecture, documents, conventions, the way agents work. The goal is to keep things in tone: to find drift, weak spots in design and process before they become expensive.
+A regular look at the project and the scaffolding around it: code, architecture, documents, the law in force, the way agents work. The goal is to keep things in tone: to find drift, weak spots in design and process before they become expensive.
 
-The result is improvement points: what to fix and by which trace, or an honest "clean"; findings are not invented for volume. Reflection changes nothing: changes are made by ordinary tasks — conventions included.
+The result is improvement points: what to fix and by which trace, or an honest "clean". An empty outcome is normal; findings are not invented for volume. Reflection changes nothing: changes are made by ordinary tasks.
 
 ## The tails, not the mean
 
-The material is the period's slowest cards, unwound one by one from their own records; a mean hides exactly what the pass is for, and a card that took half an hour is a defect of the process before it is a property of that hand. A hand spending most of its wall in its own steps is not a slow hand — it is a process that hands it too many steps. The steps a hand spends, how a card is cut, the price of a script, waiting and the landing are material for the analysis, never goals of their own; what a point must shorten is read by the law's own test («a change is counted by what it removes») and is not restated here.
-
-**No hand is added as an answer to a slow card.** Adding agents moves work between hands; the roster rule that refuses it stands in `dsh-agent-team`.
+The material is the period's slowest work, unwound one by one from its own records; a mean hides exactly what the pass is for — where work cost far more than it looked, the defect is in the process before it is in that work. A session spending most of its time inside its own steps is not slow — it is a process that hands it too many steps. The steps spent, how a task is cut, the price of a script, waiting and the landing are material for the analysis, never goals of their own; what a point must shorten is read by the law's own test — a change is counted by what it removes — and is not restated here.
 
 ## Modes
 
-- **Pulse** — a quick pass after a series of tasks: whether something slipped. Consistency, hygiene, adherence to conventions — without diving deep.
+- **Pulse** — a quick pass after a series of tasks: whether something slipped. Consistency, hygiene, adherence to the law in force — without diving deep.
 - **Review** — a full one: architecture, quality, process, scaffolding. More expensive; runs periodically or after a trace found by a pulse.
-- **Subject** — either mode narrows: "on the plugin", "on the upload module", "after the gate tasks". Do not spread beyond the subject; something noticed on the way goes as a separate item, without unwinding.
+- **Subject** — either mode narrows: "on the plugin", "on the upload module", "after the gate tasks". Do not spread beyond the subject; something heavy noticed on the way goes as a separate item, without unwinding.
 
-A mode not named — choose by the subject the request names, not by a measure of it: "run through it" — a pulse; "audit", "reflection" — a review; in doubt — ask.
+A mode not named — choose by the size of the request: "run through it" — a pulse, "audit", "reflection" — a review; in doubt — ask.
 
 ## By traces, not by feelings
 
 The material is artifacts that left a trace:
 
 - **git**: history and diffs for the period or the subject — what changed and how; a run of edits in one zone, rollbacks, returns to the same place — direct signals of process;
-- **state**: files, documents, configs — against the conventions and what PROJECT.md claims;
+- **state**: files, documents, configs — against the law in force and what PROJECT.md claims;
 - **journal**: if the environment keeps a journal of sessions and actions, it is the first material on process: steps, repeats, time;
 - **session**: reflection right after the work sees it with its own eyes — do not re-ask what is already in front of them.
 
@@ -38,9 +36,11 @@ Go deep by trace: a suspicious place is unwound, the rest is not re-read. Every 
 
 **Project.** Drift from the laid-down principles: bypassing owners and joints, connections that should not exist, modules that grew without reason, decisions that hold "because it was once decided". Design errors and non-obvious places: edges, silent failures, places where the next session will be mistaken. Documents against facts — PROJECT.md, specs.
 
-**Process.** Redundant and repeated agent actions: reworks, rollbacks, double checks, circles around the same thing; tasks that cost more than they looked. Conventions — from both sides: what was not followed and why; what was followed formally or got in the way — where guesses, workarounds and re-clarifications were needed. The unspoken — what took shape by itself but is written nowhere. Re-clarified and unspoken things are candidates for PROJECT.md. **Retold instead of read:** whether the load-bearing details of the work — a rule, a path, a number, a mechanism — were opened in their source or taken from a summary and from memory; a rule of the platform's behaviour or look, a path, a number the work rests on and nobody opened is a finding, and it is the class of defect that survives every review of the code itself.
+**Law.** The project's life against the law in force: where the two diverge — a rule that left no trace in how the project works; compliance that is only formal; guesses, workarounds, re-clarifications where the law already gives the answer. Each item carries an address — the file, the rule — and the fix is the project's, not the law's.
 
-**Scaffolding.** Skills: did they work, have they drifted from life. Files: are they turning into a log, a dump or a stale copy. Experimental rules of the kit: how the observation goes — benefit, friction or silence.
+**Process.** Redundant and repeated agent actions: reworks, rollbacks, double checks, circles around the same thing; tasks that cost more than they looked. The unspoken — what took shape by itself but is written nowhere — and what had to be clarified over and over: candidates for PROJECT.md. **Retold instead of read:** whether the load-bearing details of the work — a rule, a path, a number, a mechanism — were opened in their source or taken from a summary and from memory; a rule of the platform's behaviour or look, a path, a number the work rests on and nobody opened is a finding, and it is the class of defect that survives every review of the code itself.
+
+**Scaffolding.** Skills: did they work, have they drifted from life. Files: are they turning into a log, a dump or a stale copy.
 
 ## Pulse
 
@@ -48,7 +48,7 @@ A short pass, minutes:
 
 - consistency: documents against facts — PROJECT.md, specs, claims;
 - hygiene: `tmp/` — laid out by work and without abandoned things; specs closed or deleted; nothing temporary left in the code;
-- conventions: recent changes follow the rules — commit messages, checks by the size of the change, derived artifacts in the same change;
+- law: recent changes follow the law — commit messages, checks by the size of the change, derived artifacts in the same change;
 - process: where a series of tasks ran noticeably more expensive than it should — leave a trace for the review.
 
 ## The question itself
@@ -63,14 +63,13 @@ Keep, and say that it is kept: a rule that holds and is paid for by a defect; a 
 
 ## Result
 
-The outcome goes into the conversation, briefly: improvement points — the subject, the essence, the trace. Findings go to execution: reflection names only what is verified as an improvement, therefore "can wait" does not exist. The user's word is the one hold it knows: what he puts off is written down with its reason. Doubt that something is an improvement — not a finding: drop it or ask. What the reflection itself got wrong, or could not check, is named with it; a finding is read by someone who did not write it, and where the work allows no second reader, the report says so. "Clean" is an outcome too: name what was checked against. No file is started: an extract asked for while the work runs goes into `tmp/<slug>/`, and what survives a reflection is its conclusion — lifted into the picture or into the code — not a file.
+The outcome goes into the conversation, briefly: improvement points — the subject, the essence, the trace. Findings go to execution: reflection names only what is verified as an improvement, therefore "can wait" does not exist — a fix through an agent is cheap, a postponement is more expensive. The user's word is the one hold it knows: what the user puts off is named with its reason. Doubt that something is an improvement — not a finding: drop it or ask. "Clean" is an outcome too: name what was checked against. No file is started: an extract asked for while the work runs goes into `tmp/<slug>/`, and what survives a reflection is its conclusion — lifted into the picture or into the code — not a file.
 
-**A declared ceiling, and a handover that is not optional.** Before the first step the pass fixes what it may spend — steps or credits — and what it hands over; reaching the ceiling ends the pass in its result, never in a continuation.
-
-Findings about conventions are named separately so that they do not drown among project ones: this is the shared layer, and a fix acts in every project.
+**A declared budget, and a handover that is not optional.** Before the first step the pass fixes what it may spend — steps or credits — and what it hands over; reaching the budget ends the pass in its result, never in a continuation.
 
 ## Boundaries
 
-
+- It changes nothing itself: findings are items, fixes are tasks.
 - The user starts it; the agent may propose a moment — a series of tasks is closed, a review has not run for long — but does not start it.
 - A report for the sake of a report is not assembled: reflection is about improvement points, not about a document.
+- The laws are not a subject by default: they are taken as correct. The user's explicit request — «reflect on the laws», say against this project's knowledge — opens that subject as well; its findings go to the kit as ordinary proposals.

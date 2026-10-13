@@ -1,6 +1,6 @@
 ---
 name: dsh-skills
-description: "How a procedure is added in DeepSeek Harness: the roots a session scans for file procedures, their ranks, the row that turns the file door on, which root to choose, and how to check that a procedure has arrived. English triggers: dsh skills, add skill, skill roots, install a skill."
+description: "How a procedure is added in DeepSeek Harness: the roots a session scans for file procedures, their ranks, the row that turns the file door on, which root to choose, how to check that a procedure has arrived, and where a rule — as opposed to a procedure — must live so that a compaction does not lose it. English triggers: dsh skills, add skill, skill roots, install a skill."
 ---
 
 # Procedures in DeepSeek Harness
@@ -39,6 +39,10 @@ The platform carries procedures of its own inside packages: a row points the pro
 
 - Needed in every project of the machine, no repository involved — a file in `<dsh home>/skills`.
 - Needed by one repository — a file in `<project>/.dsh/skills`, or in `.agents/skills` when the procedure is shared with other agents.
+
+## Where a rule must live
+
+A procedure is not a home for a rule. A compaction takes a span of the visible surface out of the model's sight; what re-derives itself after it is the instruction chain, the runtime snapshot and the skill catalogue — a skill's body does not come back, and a body over the pruner's limit is cut in the transaction that writes the checkpoint. So the homes are three: a rule that must be **in force** belongs in a **prompt section**; a rule that must be **re-readable** belongs in an **instruction file** on the session's chain — the project's AGENTS.md; and a **skill carries a procedure, not a rule** — what its reader must **do**, kept under the limit. The limit and the cut are the platform's own numbers, read where they stand.
 
 ## The check
 

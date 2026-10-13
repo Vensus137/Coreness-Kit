@@ -7,7 +7,7 @@ description: "Team mode in DeepSeek Harness: the card board and its revisions, t
 
 **Only what exists here.** This procedure carries the environment: the tools, the board, the refusals, the ceilings — what exists in this mode and nowhere else.
 
-**A procedure, not the platform.** It is read when the team is touched, and every line of it describes this mode only. The platform's own text and the tool schemas arrive in every request; this file carries what they do not say — the discipline of the board, the refusals, the ceilings, the two modes.
+**A procedure, not the platform.** It is read when the team is touched, and every line of it describes this mode only. The platform's own text and the tool schemas arrive in every request; this file carries what they do not say — the discipline of the board, the refusals, the ceilings.
 
 **Where this does not apply.** An ordinary dialogue and other environments are not this mode: there the work is handed over by that environment's own means. The two are not mixed — with the team bundle on, the ordinary `subagent` and `subagent_fork` doors are turned off, and the rules of one mode would name tools the other does not have.
 
