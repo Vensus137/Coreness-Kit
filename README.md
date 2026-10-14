@@ -6,7 +6,7 @@ Work conventions an agent follows, kept as a kit: the rules themselves and the p
 
 - `AGENTS.md` — the rules of work: how a task is set up and accepted, how texts and checks are treated, what is not done.
 - `skills/` — procedures for special cases. Each one says in its own description when it applies and in which environments it works.
-- `.ru/` — the kit's Russian mirror: `AGENTS.md` and each procedure under `.ru/skills/`, named as their English originals.
+- `.ru/` — the kit's Russian mirror: `AGENTS.md` and each procedure under `.ru/skills/`, named as their English originals, and `team.md` — the texts of a universal team: its roles and their instructions.
 - `LICENSE` — MIT.
 
 ## How it is used
