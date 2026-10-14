@@ -7,7 +7,7 @@ description: "Work in circles: development in steps — a step, a review by a fr
 
 A working mode for tasks that run in steps: each step is closed by a review from a fresh agent, findings are reworked before the next step begins, and the review does not replace acceptance by the user. The user turns the mode on — by a word or in the spec; a fitting moment is a reason to propose it, not to start it. It runs in single-handed work, where the environment gives a fresh agent: clean context, no edits to the step.
 
-**Where its parts live.** The principles of the pass are the reflection's: every finding carries a trace; the bias is subtraction; the budget is declared before the first step; findings go into the conversation, and documents are not started. Beyond them the circle carries its own: the loop of the step, the split of roles, the reviewer's brief. A step's review is not a reflection pass: a circle holds a step against the spec and the law in force, a reflection holds the project and its scaffolding against a period, and neither runs in place of the other. A class of findings repeating from step to step is a reason for a reflection; the reflection is started by the user.
+**Where its parts live.** The principles of the pass are the reflection's: every finding carries a trace; the bias is subtraction; findings go into the conversation, and documents are not started. Beyond them the circle carries its own: the loop of the step, the split of roles, the reviewer's brief. A step's review is not a reflection pass: a circle holds a step against the spec and the law in force, a reflection holds the project and its scaffolding against a period, and neither runs in place of the other. A class of findings repeating from step to step is a sign not of the step but of what produces it: it goes to the user in words — along the way or at the close — as a reason for a revision.
 
 ## The loop
 
@@ -21,11 +21,10 @@ A working mode for tasks that run in steps: each step is closed by a review from
 
 - The review does not replace acceptance: "done" is said by the acceptance criterion or by the user, not by the author and not by the reviewer.
 - The reviewer does not edit, and the executor does not review its own step: authorship and check do not merge.
-- The budget of a circle — steps, credits — is declared in advance, by the user or by the spec; hitting the ceiling is a stop and a report to the user.
 - Numbers, paths and mechanisms the work stands on are taken from the source at the moment they are leaned on; a summary and memory are a reason to open the source, not a substitute.
 - If the rework changes the instrument or the conditions the step's artifacts were made in, the divergence is named straight: artifacts of the old revision are not served as new.
 - A circle needs a fresh agent — clean context, no edits to the step. Where the environment gives no such door, the mode does not run: the fresh eye there belongs to the environment's own mechanics.
 
 ## Marks
 
-The marks of a review are kinds of defect, not cases: what is said against what is done; a failure muted or substituted for; a number, a path or a mechanism without its source; what is extra and lives without a consumer; a condition held by a promise instead of by the environment. Single cases do not live here: a new mark enters by a change to the canon.
+The marks of a review are directions for the eye, not requirements and not a full list: what is said against what is done; a failure muted or substituted for; a number, a path or a mechanism without its source; what is extra and lives without a consumer; a condition held by a promise instead of by the environment. Attention can go elsewhere too.
