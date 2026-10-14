@@ -137,4 +137,4 @@ The documents of the project are read by an agent: a cold session must enter the
 
 Kit: https://github.com/Vensus137/Coreness-Kit.
 
-Version: 2.0 (2026-10-13)
+Version: 2.1 (2026-10-14)
